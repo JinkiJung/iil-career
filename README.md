@@ -1,2 +1,2 @@
 # iil-career
-career showcase with iil model
+career webpage generator from iil model

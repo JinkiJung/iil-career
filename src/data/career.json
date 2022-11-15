@@ -1,0 +1,673 @@
+{
+    "career":[
+       {
+         "id": "",
+         "describe": {
+            "resumeTheme":{
+               "background": "linear-gradient(#1d3557 70%, #457b9d)",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "white",
+               "secondaryFontColor": "lightgray",
+               "thumbnail": "",
+               "figure": ""
+            },
+           "resume": {
+            "shortName": "MIR",
+             "category":[
+                "back-end"
+             ],
+             "description":"an authentication mechanism for maritime organization which supports both PKI and OIDC",
+             "contributions":[
+                "distributed MIR development",
+                "MMS integration  as entity type",
+                "deployment of MIR"
+             ],
+             "skills":[
+                "Java",
+                "Springboot",
+                "PKI",
+                "OIDC",
+                "docker-compose"
+             ],
+             "affiliation":{
+               "name": "DMC",
+               "link": "https://dmc.international/"
+             },
+             "keywords":[
+                "cyber security",
+                "authentication",
+                "digitalization",
+                "open-source"
+             ],
+             "period":"2019.04 ~ now"
+           }
+         },
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "status": "ACTIVE",
+          "act":"MCP Identity Registry (MIR) development",
+          "goal":"MCP",
+          "output":[
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/maritimeconnectivity/IdentityRegistry"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#fefae0 60%, #e9edc9, #ccd5ae)",
+            "fontFace": "",
+               "titleFontColor": "black",
+               "titleFontShadowColor": "lightgray",
+               "contentFontColor": "black",
+               "secondaryFontColor": "#14213d",
+               "thumbnail": "",
+               "figure": ""
+         },
+         "resume": {
+            "shortName": "MCP portal",
+           "category":[
+              "front-end"
+           ],
+           "description":"an interface for organization administrators who manages resources through MCP",
+           "contributions":[
+              "leading development",
+              "deployment to GitHub Pages through Github Actions"
+           ],
+           "skills":[
+              "Typescript",
+              "Angular"
+           ],
+           "affiliation":{
+            "name": "DMC",
+            "link": "https://dmc.international/"
+          },
+           "keywords":[
+              "management portal",
+              "open-source"
+           ],
+           "period":"2022.06 ~ now"
+         }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "ACTIVE",
+          "act":"MCP Management Portal development",
+          "goal":"MCP",
+          "output":[
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/maritimeconnectivity/ManagementPortal"
+            },
+            {
+               "name": "Web page",
+               "link": "https://management.maritimeconnectivity.net/login"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#003049 80%, #006d77)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "white",
+               "secondaryFontColor": "lightgray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "MSR",
+            "category":[
+                "back-end",
+                "front-end"
+             ],
+             "description":"a discovery service for maritime technical services",
+             "contributions":[
+                "front and search page development",
+                "testing and maintenance"
+             ],
+             "skills":[
+                "Java",
+                "Springboot",
+                "javascript"
+             ],
+             "affiliation":{
+               "name": "DMC",
+               "link": "https://dmc.international/"
+             },
+             "keywords":[
+                "service discovery",
+                "digitalization",
+                "open-source"
+             ],
+             "period":"2021.04 ~ now"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "ACTIVE",
+          "act":"MCP Service Registry (MSR) development",
+          "goal":"MCP",
+          "output":[
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/maritimeconnectivity/ServiceRegistry"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#03071e 70%, #370617)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "white",
+               "secondaryFontColor": "lightgray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "MCP documentation",
+            "category":[
+                "documentation"
+             ],
+             "description":"an online documentation of MCP components",
+             "contributions":[
+                "leading development",
+                "deployment through GitHub Actions and readthedocs.org"
+             ],
+             "skills":[
+                "markdown",
+                "Sphinx"
+             ],
+             "affiliation":{
+               "name": "DMC",
+               "link": "https://dmc.international/"
+             },
+             "keywords":[
+                "documentation",
+                "open-source"
+             ],
+             "period":"2020.06 ~ now"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "ACTIVE",
+          "act":"MCP online documentation",
+          "goal":"MCP",
+          "output":[
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net"
+            },
+            {
+               "name": "Web page",
+               "link": "https://docs.maritimeconnectivity.net/"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#edf6f9 80%, #ffddd2)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "black",
+               "secondaryFontColor": "gray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "iil",
+            "category":[
+                "research"
+             ],
+             "description":"a high-level script for representing works and its consequences, spinoff of previous project 'Tasc'",
+             "contributions":[
+                "founder of iil",
+                "leading development"
+             ],
+             "skills":[
+     
+             ],
+             "affiliation":{
+               "name": "personal",
+               "link": "https://jinkijung.github.io/"
+             },
+             "keywords":["efficiency", "modeling"],
+             "period":"2022.01 ~ now"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "ACTIVE",
+          "act":"iil",
+          "goal":"iil",
+          "output":[
+            {
+               "name": "Web page",
+               "link": "https://iil.readthedocs.org"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#324A5F, #1B2A41, #0C1821)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "white",
+               "secondaryFontColor": "lightgray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "iil-todo",
+            "category":[
+                "front-end",
+                "back-end"
+             ],
+             "description":"a todo-list app based on iil",
+             "contributions":[
+                "leading development"
+             ],
+             "skills":[
+                "Java",
+                "Springboot",
+                "React",
+                "Typescript"
+             ],
+             "affiliation":{
+               "name": "personal",
+               "link": "https://jinkijung.github.io/"
+             },
+             "keywords":[
+                "efficiency",
+                "open-source"
+             ],
+             "period":"2022.01 ~ now"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "ACTIVE",
+          "act":"iil-todo",
+          "goal":"iil",
+          "output":[
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/JinkiJung/iil-todo"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#FE938C, #D496A7, #F1DEDE)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "white",
+               "secondaryFontColor": "#111D5E",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "Tasc",
+            "category":[
+                "research",
+                "real-time system"
+             ],
+             "description":"a Tasc-based Unity engine plugin facilitating easy and harmonized training scenario implementation",
+             "contributions":[
+                "leading development"
+             ],
+             "skills":[
+                "Unity",
+                "C#"
+             ],
+             "affiliation":{
+               "name": "KRISO",
+               "link": "https://kriso.re.kr/eng/"
+             },
+             "keywords":[
+                "safety",
+                "efficiency",
+                "open-source"
+             ],
+             "period":"2019.08 ~ 2020.04"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "DONE",
+          "act":"Task Script (Tasc)",
+          "goal":"Virtuality for Safety",
+          "output":[
+            {
+               "name": "Paper",
+               "link": "https://ieeexplore.ieee.org/document/8943763"
+            },
+            {
+               "name": "GitHub repository - engine",
+               "link": "https://github.com/JinkiJung/Tasc-Unity"
+            },
+            {
+               "name": "GitHub repository - example: crane manipulation",
+               "link": "https://github.com/VirtualityForSafety/CraneManipulation3D"
+            },
+            {
+               "name": "GitHub repository - example: maze escape",
+               "link": "https://github.com/VirtualityForSafety/MazeEscape3D"
+            },
+            {
+               "name": "GitHub repository - example: stretching exercise",
+               "link": "https://github.com/VirtualityForSafety/StretchingExercise3D"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#ABDAE1, #A3B9C9, #A09CB0)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "black",
+               "secondaryFontColor": "gray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "MRR",
+            "category":[
+                "front-end"
+             ],
+             "description":"a discovery service of maritime resources using MRN and version",
+             "contributions":[
+                "interface development"
+             ],
+             "skills":[
+                "Typescript",
+                "React"
+             ],
+             "affiliation":{
+               "name": "DMC",
+               "link": "https://dmc.international/"
+             },
+             "keywords":[
+                "digitalization",
+                "discovery service",
+                "open-source"
+             ],
+             "period":"2022.04 ~ now"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "ACTIVE",
+          "act":"Maritime Resource Registry (MRR) development",
+          "output":[
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/Digital-Maritime-Consultancy/mrr-portal"
+            },
+            {
+               "name": "Web page",
+               "link": "https://digital-maritime-consultancy.github.io/mrr-portal/"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#F7F7F2 90%, #E4E6C3, #899878)",
+            "fontFace": "",
+               "titleFontColor": "black",
+               "titleFontShadowColor": "lightgray",
+               "contentFontColor": "black",
+               "secondaryFontColor": "gray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume" : {
+         "shortName": "VoTT-MOAD",
+            "category":[
+                "front-end",
+                "native application"
+             ],
+             "description":"super-pixel based annotation support in VoTT",
+             "contributions":[
+                "leading development"
+             ],
+             "skills":[
+                "Typescript",
+                "React",
+                "Electron"
+             ],
+             "affiliation":{
+               "name": "DMC",
+               "link": "https://dmc.international/"
+             },
+             "keywords":[
+                "data collection for ML",
+                "annotation tool"
+             ],
+             "period":"2020.10 ~ 2021.11"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "DONE",
+          "act":"Annotation tool development for MOAD project based on VoTT",
+          "goal":"MOAD",
+          "output":[
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-MOAD"
+            },
+            {
+               "name": "Public dataset generated by the tool",
+               "link": "https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=116&topMenu=100&aihubDataSe=ty&dataSetSn=175"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#F6FFF8, #EAF4F4, #CCE3DE, #A4C3B2)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "#2d232e",
+               "secondaryFontColor": "gray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "VoTT-dot",
+            "category":[
+                "front-end",
+                "back-end"
+             ],
+             "description":"point-based semi-automatic annotation with client-server version of VoTT",
+             "contributions":[
+                "lead front-end developer",
+                "lead back-end developer"
+             ],
+             "skills":[
+                "Typescript",
+                "React",
+                "Electron",
+                "Java",
+                "Spring boot"
+             ],
+             "affiliation":{
+               "name": "DMC",
+               "link": "https://dmc.international/"
+             },
+             "keywords":[
+                "data collection for ML",
+                "annotation tool"
+             ],
+             "period":"2021.09 ~ now"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "ACTIVE",
+          "act":"Semi-automatic annotation tool for ML based on VoTT",
+          "goal":"MAIDAS",
+          "output":[
+            {
+               "name": "GitHub repository - front-end",
+               "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-dot"
+            },
+            {
+               "name": "GitHub repository - back-end",
+               "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-dot-server"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#588157, #0F7173, #D8A47F, #F05D5E)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "white",
+               "secondaryFontColor": "lightgray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "AR for safety",
+            "category":[
+                "research",
+                "AR",
+                "VR"
+             ],
+             "description":"visual safety alarm system for the AR user and its analysis through Deep learning and simulated VR environment",
+             "contributions":[
+                "leading research",
+                "lead Unity developer"
+             ],
+             "skills":[
+                "Unity",
+                "C#"
+             ],
+             "affiliation":{
+               "name": "KRISO",
+               "link": "https://kriso.re.kr/eng/"
+             },
+             "keywords":[
+                "VR",
+                "AR",
+                "deep learning"
+             ],
+             "period":"2018.03 ~ 2018.10"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "DONE",
+          "act":"VR/AR for safety",
+          "goal":"VirtualityForSafety",
+          "output":[
+            {
+               "name": "Paper",
+               "link": "https://ieeexplore.ieee.org/document/8613752"
+            },
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/VirtualityForSafety/RoadTrafficSimulation3D"
+            }
+          ]
+       },
+       {
+       "id": "",
+       "describe": {
+         "resumeTheme":{
+            "background": "linear-gradient(#240046 80%, #3c096c)",
+            "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "black",
+               "contentFontColor": "white",
+               "secondaryFontColor": "lightgray",
+               "thumbnail": "",
+               "figure": ""
+         },
+        "resume": {
+         "shortName": "MLVT",
+            "category":["Augmented Reality"],
+         "description":"real-time 6 DOF feature tracking for Augmented Reality",
+         "contributions":[
+            "AR engine integration",
+            "performance optimization"
+         ],
+         "skills":[
+            "C++",
+            "OpenCV"
+         ],
+         "affiliation":{
+            "name": "KAIST",
+            "link": "https://www.kaist.ac.kr/en/"
+          },
+         "keywords":[
+            "AR",
+            "real-time system"
+         ],
+         "period":"2010.09 ~ 2014.12"
+        }
+       },
+       "namespace": "resume",
+       "actor": "Jinki Jung",
+       "owner": "Jinki Jung",
+       "status": "DONE",
+          "act":"Efficient mobile AR platform with real-time tracking",
+          "output":[
+            {
+               "name": "Paper - Efficient mobile AR technology using scalable recognition and tracking based on server-client model",
+               "link": "https://www.sciencedirect.com/science/article/abs/pii/S0097849312000052"
+            },
+            {
+               "name": "Paper - Smartphone as an augmented reality authoring tool via multi-touch based 3D interaction method",
+               "link": "https://dl.acm.org/doi/abs/10.1145/2407516.2407520"
+            }
+          ]
+       }
+    ]
+ }
+ 
