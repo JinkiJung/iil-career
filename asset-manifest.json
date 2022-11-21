@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/iil-career-pages/static/css/main.5897236b.css",
+    "main.js": "/iil-career-pages/static/js/main.6a51d106.js",
+    "static/js/787.2ae00388.chunk.js": "/iil-career-pages/static/js/787.2ae00388.chunk.js",
+    "index.html": "/iil-career-pages/index.html",
+    "main.5897236b.css.map": "/iil-career-pages/static/css/main.5897236b.css.map",
+    "main.6a51d106.js.map": "/iil-career-pages/static/js/main.6a51d106.js.map",
+    "787.2ae00388.chunk.js.map": "/iil-career-pages/static/js/787.2ae00388.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5897236b.css",
+    "static/js/main.6a51d106.js"
+  ]
+}
