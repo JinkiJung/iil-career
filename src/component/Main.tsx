@@ -1,4 +1,4 @@
-import { Card, CardGroup, Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import data from '../data/career.json';
 import { Section } from "./Section";
 import './Main.scss';

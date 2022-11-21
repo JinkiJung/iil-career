@@ -1,7 +1,4 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
-import { Header } from './component/Header';
 import { Main } from './component/Main';
 import { NavProvider } from './component/NavProvider';
 import { Nav } from './component/Nav';

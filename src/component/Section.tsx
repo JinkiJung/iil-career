@@ -31,7 +31,7 @@ export const Section = ({item, index}: SectionProp) => {
                                 <span style={{color: item.describe.resumeTheme.contentFontColor}}>{item.describe.resume?.period}</span>
                             </Row>
                             <Row className="text-end" style={{justifyContent:'right'}}>
-                                <a target="_blank" href={item.describe.resume?.affiliation.link}>{item.describe.resume?.affiliation.name}</a>
+                                <a target="_blank" rel="noreferrer" href={item.describe.resume?.affiliation.link}>{item.describe.resume?.affiliation.name}</a>
                             </Row>
                         </Col>
                     </Row>
