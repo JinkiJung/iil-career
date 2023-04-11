@@ -1,0 +1,57 @@
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+  }
+
+.arrow-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 2s ease-in-out infinite;
+  }
+  
+  .arrow-down {
+    width: 30px;
+    height: 30px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    animation: move-down 2s ease-in-out infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes move-down {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: rotate(45deg) translateX(10px) translateY(10px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+  }
+
+  .text {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
