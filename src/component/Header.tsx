@@ -1,4 +1,4 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import './Header.scss';
 
 const boxStyle = {
