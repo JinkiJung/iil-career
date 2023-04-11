@@ -7,7 +7,8 @@ export const Main = () => {
     return <Container fluid className="careerContainer p-0">
     {
         data.career.map((e, index) => {
-            return <Section key={e.act} item={e} index={index}></Section>}
+            return <Section key={e.act.name} item={e} index={index}></Section>;
+            }
             )
     }
     </Container>;

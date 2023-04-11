@@ -1,8 +1,14 @@
 {
+   "frontPage": {
+      "title": "Title"
+   },
     "career":[
        {
          "id": "",
-         "describe": {
+         "help": {
+            "click": "https://dmc.international/"
+         },
+         "about": {
             "resumeTheme":{
                "background": "linear-gradient(#1d3557 70%, #457b9d)",
                "fontFace": "",
@@ -25,11 +31,9 @@
                 "deployment of MIR"
              ],
              "skills":[
-                "Java",
-                "Springboot",
-                "PKI",
-                "OIDC",
-                "docker-compose"
+                "java",
+                "spring",
+                "docker"
              ],
              "affiliation":{
                "name": "DMC",
@@ -47,8 +51,10 @@
          "namespace": "resume",
          "actor": "Jinki Jung",
          "owner": "Jinki Jung",
-         "status": "ACTIVE",
-          "act":"MCP Identity Registry (MIR) development",
+         "state": "ACTIVE",
+          "act":{
+            "name": "MCP Identity Registry (MIR) development"
+          },
           "goal":"MCP",
           "output":[
             {
@@ -59,7 +65,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#fefae0 60%, #e9edc9, #ccd5ae)",
             "fontFace": "",
@@ -82,7 +88,7 @@
            ],
            "skills":[
               "Typescript",
-              "Angular"
+              "angularjs"
            ],
            "affiliation":{
             "name": "DMC",
@@ -98,8 +104,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "ACTIVE",
-          "act":"MCP Management Portal development",
+       "state": "ACTIVE",
+          "act":{
+            "name": "MCP Management Portal development"
+          },
           "goal":"MCP",
           "output":[
             {
@@ -114,7 +122,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#003049 80%, #006d77)",
             "fontFace": "",
@@ -137,9 +145,10 @@
                 "testing and maintenance"
              ],
              "skills":[
-                "Java",
-                "Springboot",
-                "javascript"
+                "java",
+                "spring",
+                "javascript",
+                "postgresql"
              ],
              "affiliation":{
                "name": "DMC",
@@ -156,8 +165,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "ACTIVE",
-          "act":"MCP Service Registry (MSR) development",
+       "state": "ACTIVE",
+          "act":{
+            "name": "MCP Service Registry (MSR) development"
+          },
           "goal":"MCP",
           "output":[
             {
@@ -168,7 +179,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#03071e 70%, #370617)",
             "fontFace": "",
@@ -190,8 +201,7 @@
                 "deployment through GitHub Actions and readthedocs.org"
              ],
              "skills":[
-                "markdown",
-                "Sphinx"
+                "markdown"
              ],
              "affiliation":{
                "name": "DMC",
@@ -207,8 +217,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "ACTIVE",
-          "act":"MCP online documentation",
+       "state": "ACTIVE",
+          "act":{
+            "name": "MCP online documentation"
+         },
           "goal":"MCP",
           "output":[
             {
@@ -223,7 +235,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#edf6f9 80%, #ffddd2)",
             "fontFace": "",
@@ -245,8 +257,8 @@
                 "leading development"
              ],
              "skills":[
-     
-             ],
+               "markdown"
+            ],
              "affiliation":{
                "name": "personal",
                "link": "https://jinkijung.github.io/"
@@ -258,8 +270,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "ACTIVE",
-          "act":"iil",
+       "state": "ACTIVE",
+          "act":{
+            "name": "iil"
+         },
           "goal":"iil",
           "output":[
             {
@@ -270,7 +284,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#324A5F, #1B2A41, #0C1821)",
             "fontFace": "",
@@ -292,10 +306,11 @@
                 "leading development"
              ],
              "skills":[
-                "Java",
-                "Springboot",
+                "java",
+                "spring",
                 "React",
-                "Typescript"
+                "Typescript",
+                "postgresql"
              ],
              "affiliation":{
                "name": "personal",
@@ -311,8 +326,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "ACTIVE",
-          "act":"iil-todo",
+       "state": "ACTIVE",
+          "act":{
+            "name": "iil-todo"
+          },
           "goal":"iil",
           "output":[
             {
@@ -323,7 +340,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#FE938C, #D496A7, #F1DEDE)",
             "fontFace": "",
@@ -346,7 +363,7 @@
              ],
              "skills":[
                 "Unity",
-                "C#"
+                "csharp"
              ],
              "affiliation":{
                "name": "KRISO",
@@ -363,8 +380,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "DONE",
-          "act":"Task Script (Tasc)",
+       "state": "DONE",
+          "act":{
+            "name": "Task Script (Tasc)"
+          },
           "goal":"Virtuality for Safety",
           "output":[
             {
@@ -391,7 +410,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#ABDAE1, #A3B9C9, #A09CB0)",
             "fontFace": "",
@@ -430,8 +449,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "ACTIVE",
-          "act":"Maritime Resource Registry (MRR) development",
+       "state": "ACTIVE",
+          "act":{
+            "name": "Maritime Resource Registry (MRR) development"
+          },
           "output":[
             {
                "name": "GitHub repository",
@@ -445,7 +466,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#F7F7F2 90%, #E4E6C3, #899878)",
             "fontFace": "",
@@ -485,8 +506,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "DONE",
-          "act":"Annotation tool development for MOAD project based on VoTT",
+       "state": "DONE",
+          "act":{
+            "name": "Annotation tool development for MOAD project based on VoTT"
+          },
           "goal":"MOAD",
           "output":[
             {
@@ -501,7 +524,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#F6FFF8, #EAF4F4, #CCE3DE, #A4C3B2)",
             "fontFace": "",
@@ -527,8 +550,8 @@
                 "Typescript",
                 "React",
                 "Electron",
-                "Java",
-                "Spring boot"
+                "java",
+                "Spring"
              ],
              "affiliation":{
                "name": "DMC",
@@ -544,8 +567,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "ACTIVE",
-          "act":"Semi-automatic annotation tool for ML based on VoTT",
+       "state": "ACTIVE",
+          "act":{
+            "name": "Semi-automatic annotation tool for ML based on VoTT"
+          },
           "goal":"MAIDAS",
           "output":[
             {
@@ -560,7 +585,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#588157, #0F7173, #D8A47F, #F05D5E)",
             "fontFace": "",
@@ -585,7 +610,7 @@
              ],
              "skills":[
                 "Unity",
-                "C#"
+                "csharp"
              ],
              "affiliation":{
                "name": "KRISO",
@@ -602,8 +627,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "DONE",
-          "act":"VR/AR for safety",
+       "state": "DONE",
+          "act":{
+            "name": "VR/AR for safety"
+          },
           "goal":"VirtualityForSafety",
           "output":[
             {
@@ -618,7 +645,7 @@
        },
        {
        "id": "",
-       "describe": {
+       "about": {
          "resumeTheme":{
             "background": "linear-gradient(#240046 80%, #3c096c)",
             "fontFace": "",
@@ -638,7 +665,7 @@
             "performance optimization"
          ],
          "skills":[
-            "C++",
+            "cplusplus",
             "OpenCV"
          ],
          "affiliation":{
@@ -655,8 +682,10 @@
        "namespace": "resume",
        "actor": "Jinki Jung",
        "owner": "Jinki Jung",
-       "status": "DONE",
-          "act":"Efficient mobile AR platform with real-time tracking",
+       "state": "DONE",
+          "act":{
+            "name": "Efficient mobile AR platform with real-time tracking"
+          },
           "output":[
             {
                "name": "Paper - Efficient mobile AR technology using scalable recognition and tracking based on server-client model",
