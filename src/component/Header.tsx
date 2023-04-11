@@ -4,8 +4,8 @@ import './Header.scss';
 const boxStyle = {
     backgroundColor: '#2F4858',
     borderRadius: '25px',
-    minWidth: '600px',
-    minHeight: '600px',
+    minWidth: '400px',
+    minHeight: '400px',
     display: 'flex',
     flexDirection: 'column' as const,
     justifyContent: 'center',
@@ -34,7 +34,7 @@ export const Header = () => {
             <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
                 <div style={boxStyle}>
                     <div style={titleStyle}>Jinki Jung</div>
-                    <img src={window.location.origin + process.env.PUBLIC_URL + "/jinki_profile.png"} alt="profile pic" height="180px"></img>
+                    <img src={window.location.origin + process.env.PUBLIC_URL + "/jinki_profile.png"} alt="profile pic" height="150px"></img>
                     <div style={descriptionStyle}>developer career page</div>
                 </div>
             </Container>
