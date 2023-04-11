@@ -92,7 +92,7 @@ export const Section = ({item, index}: SectionProp) => {
                         <Col className={`p-0 fs-5 ${careerTextAlignment}`}>
                             <span style={{color: item.about.resumeTheme.contentFontColor}}>
                                 {item.about.resume?.skills.map((iconName: string) => 
-                                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`} height={60}/>
+                                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`} height={60} alt={iconName}/>
                                 )}
                             </span>
                         </Col>
