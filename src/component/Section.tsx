@@ -6,17 +6,19 @@ export interface SectionProp {
 }
 
 export const Section = ({item, index}: SectionProp) => {
-    let careerTextAlignment, outputTextAlignment, careerAlignment, outputAlignment;
+    let careerTextAlignment, outputTextAlignment, careerAlignment, outputAlignment, deviconAlignment;
     if (index % 2) {
         careerTextAlignment = 'text-start';
         outputTextAlignment = 'text-end';
         careerAlignment = 'left';
         outputAlignment = 'right';
+        deviconAlignment = 'flex-row';
     } else {
         careerTextAlignment = 'text-end';
         outputTextAlignment = 'text-start';
         careerAlignment = 'right';
         outputAlignment = 'left';
+        deviconAlignment = 'flex-row-reverse';
     }
     return (
         <Row className="w-100 d-flex careerItem p-0 m-0">
@@ -80,10 +82,20 @@ export const Section = ({item, index}: SectionProp) => {
                             </Row>
                             <Row style={{justifyContent:`${careerAlignment}`}} className={`fs-5 ${careerTextAlignment} pt-2`}>
                                 <span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                    {item.about.resume?.skills.map((iconName: string) => 
-                                        <img key={iconName} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`} height={50} alt={iconName}/>
-                                    )}
+                                    <b>Language and framework</b>
                                 </span>
+                                <div className={`d-flex mb-3  ${deviconAlignment}`}>
+                                    {item.about.resume?.skills.map((iconName: string) => 
+                                        <div className="p-2">
+                                        <span style={{color: item.about.resumeTheme.contentFontColor}}>
+                                            <img key={iconName} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`} height={50} alt={iconName}/>
+                                            <br />
+                                            {iconName}
+                                        </span>
+                                        </div>
+                                    )}
+                                </div>
+                                
                             </Row>
                         </Col>
                         <Col xs={1} className="p-0"></Col>
