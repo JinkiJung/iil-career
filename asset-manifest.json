@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/iil-career/static/css/main.b5779558.css",
-    "main.js": "/iil-career/static/js/main.216923b8.js",
+    "main.js": "/iil-career/static/js/main.3609e28f.js",
     "static/js/787.2ae00388.chunk.js": "/iil-career/static/js/787.2ae00388.chunk.js",
     "index.html": "/iil-career/index.html",
     "main.b5779558.css.map": "/iil-career/static/css/main.b5779558.css.map",
-    "main.216923b8.js.map": "/iil-career/static/js/main.216923b8.js.map",
+    "main.3609e28f.js.map": "/iil-career/static/js/main.3609e28f.js.map",
     "787.2ae00388.chunk.js.map": "/iil-career/static/js/787.2ae00388.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5779558.css",
-    "static/js/main.216923b8.js"
+    "static/js/main.3609e28f.js"
   ]
 }
