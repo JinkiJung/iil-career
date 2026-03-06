@@ -14,24 +14,30 @@ export const Section = ({ item }: SectionProp) => {
     const contentColor = theme.contentFontColor;
     const secondaryColor = theme.secondaryFontColor;
 
-    const detailRef = useRef<HTMLDivElement>(null);
+    const outerRef = useRef<HTMLDivElement>(null);
+    const stickyRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const el = detailRef.current;
-        if (!el) return;
-        const container = el.closest('.careerContainer') as HTMLElement;
+        const outer = outerRef.current;
+        const sticky = stickyRef.current;
+        if (!outer || !sticky) return;
+        const container = outer.closest('.careerContainer') as HTMLElement;
         if (!container) return;
 
         const onScroll = () => {
-            const rect = el.getBoundingClientRect();
+            const rect = outer.getBoundingClientRect();
             const vh = window.innerHeight;
-            // p goes from 0 (detail page just entering from bottom) to 1 (fully in view)
-            const p = Math.max(0, Math.min(1, 1 - rect.top / vh));
-            el.style.setProperty('--p', p.toFixed(3));
+            const scrollable = outer.offsetHeight - vh;
+            if (scrollable <= 0) return;
+            const scrolled = -rect.top;
+            const deadzone = 50;
+            const effective = Math.max(0, scrolled - deadzone);
+            const p = Math.max(0, Math.min(1, effective / (scrollable - deadzone)));
+            sticky.style.setProperty('--p', p.toFixed(3));
         };
 
         container.addEventListener('scroll', onScroll, { passive: true });
-        onScroll(); // initial calculation
+        onScroll();
         return () => container.removeEventListener('scroll', onScroll);
     }, []);
 
@@ -43,21 +49,13 @@ export const Section = ({ item }: SectionProp) => {
     };
 
     return (
-        <>
-            {/* Hero page — static, full-screen overview */}
-            <div
-                className="section-hero careerItem"
-                style={{ backgroundColor: theme.background }}
-            >
-                <Overview item={item} />
-            </div>
-
-            {/* Detail page — scroll-driven transition via --p */}
-            <div
-                ref={detailRef}
-                className="section-detail careerItem"
-                style={{ backgroundColor: theme.background }}
-            >
+        <div
+            ref={outerRef}
+            className="section-outer"
+            style={{ backgroundColor: theme.background }}
+        >
+            <div ref={stickyRef} className="section-sticky">
+                <div className="section-top-gap" />
                 <Overview item={item} />
 
                 <div className="section-body">
@@ -122,6 +120,6 @@ export const Section = ({ item }: SectionProp) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };

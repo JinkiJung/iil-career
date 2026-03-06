@@ -1,28 +1,18 @@
 /* ═══════════════════════════════════════
    Overview container
-   Hero page: full-page, title centered
-   Detail page: driven by --p (0=hero, 1=compact)
+   Driven by --p on .section-sticky (0=hero, 1=compact)
    ═══════════════════════════════════════ */
 .overview-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 0;
-    flex-grow: 1;
-}
-
-/* On detail page, flex-grow shrinks from 1 to 0 as --p goes 0→1 */
-.section-detail .overview-container {
-    flex-grow: calc((1 - var(--p)) * 100);
 }
 
 /* ═══════════════════════════════════════
    Title row
-   Hero: flex:1 centered
-   Detail at --p:1: flex:0 collapsed
    ═══════════════════════════════════════ */
 .overview-title-row {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,15 +20,12 @@
     padding: 0 3rem;
 }
 
-.section-detail .overview-title-row {
-    flex-grow: calc((1 - var(--p)) * 100);
+.section-sticky .overview-title-row {
     padding: calc(var(--p) * 1.5rem) 3rem calc(var(--p) * 1rem);
 }
 
 /* ═══════════════════════════════════════
    Title text
-   Hero: large
-   Detail at --p:1: compact
    ═══════════════════════════════════════ */
 .overview-title {
     font-size: clamp(3rem, 8vw, 7rem);
@@ -49,7 +36,7 @@
     margin: 0;
 }
 
-.section-detail .overview-title {
+.section-sticky .overview-title {
     font-size: clamp(
         2.2rem,
         calc(8vw - var(--p) * 3vw),
@@ -59,7 +46,7 @@
 }
 
 /* ═══════════════════════════════════════
-   Subtitle (hero only — fades out as --p increases)
+   Subtitle — fades out as --p increases
    ═══════════════════════════════════════ */
 .overview-subtitle {
     margin: 1rem 0 0;
@@ -72,7 +59,7 @@
     overflow: hidden;
 }
 
-.section-detail .overview-subtitle {
+.section-sticky .overview-subtitle {
     opacity: calc(0.6 * (1 - var(--p)));
     max-height: calc((1 - var(--p)) * 3rem);
     margin: calc((1 - var(--p)) * 1rem) 0 0;
@@ -88,7 +75,7 @@
 }
 
 /* ═══════════════════════════════════════
-   Meta row (same in both states)
+   Meta row
    ═══════════════════════════════════════ */
 .overview-meta-row {
     display: grid;
@@ -203,7 +190,7 @@
         padding-right: 1.5rem;
     }
 
-    .section-detail .overview-title-row {
+    .section-sticky .overview-title-row {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -231,7 +218,7 @@
         font-size: clamp(2.5rem, 10vw, 5rem);
     }
 
-    .section-detail .overview-title {
+    .section-sticky .overview-title {
         font-size: clamp(2rem, calc(10vw - var(--p) * 4vw), calc(5rem - var(--p) * 3rem));
     }
 }
