@@ -10,12 +10,12 @@
          },
          "about": {
             "resumeTheme":{
-               "background": "linear-gradient(#1d3557 70%, #457b9d)",
+               "background": "#1a2744",
                "fontFace": "",
                "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "lightgray",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#e8edf5",
+               "secondaryFontColor": "#8fa3c8",
                "thumbnail": "",
                "figure": ""
             },
@@ -24,11 +24,17 @@
              "category":[
                 "back-end"
              ],
-             "description":"an authentication mechanism for maritime organization which supports both PKI and OIDC",
+             "description":"The MIR is the digital passport system for the maritime world — it gives every ship, person, organization, and device a unique, verified identity so they can be trusted when communicating or exchanging data at sea. The MIR provides PKI-based identity management for MCP entities — assigning each a unique MRN, issuing bound X.509 certificates, and enabling OAuth 2.0 / OpenID Connect-based auth within a distributed trust framework governed by audited security profiles.",
              "contributions":[
                 "distributed MIR development",
-                "MMS integration  as entity type",
+                "MMS integration as entity type",
                 "deployment of MIR"
+             ],
+             "competencies":[
+                "Distributed systems architecture",
+                "PKI & OIDC security engineering",
+                "Containerized deployment with Docker",
+                "Open-source project contribution"
              ],
              "skills":[
                 "java",
@@ -45,7 +51,8 @@
                 "digitalization",
                 "open-source"
              ],
-             "period":"2019.04 ~ now"
+             "startDate":"2019.04",
+             "endDate":"now"
            }
          },
          "namespace": "resume",
@@ -53,7 +60,7 @@
          "owner": "Jinki Jung",
          "state": "ACTIVE",
           "act":{
-            "name": "MCP Identity Registry (MIR) development"
+            "name": "Maritime Identity Registry"
           },
           "goal":"MCP",
           "output":[
@@ -67,14 +74,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#003049 80%, #006d77)",
+            "background": "#0d2030",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "lightgray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#ddeef5",
+            "secondaryFontColor": "#6fa8c0",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "MSR",
@@ -82,10 +89,16 @@
                "front-end",
                 "back-end"
              ],
-             "description":"A maritime technical service discovery service",
+             "description":"The MSR is a searchable directory of maritime digital services — it doesn't deliver the services itself, but tells you what services exist, what information they provide, and how to connect to them. The MSR stores service specifications conforming to IALA Guideline G1128 and manages the lifecycle of provisioned service instances, enabling discovery via faceted search across keywords, organizations, and geolocation.",
              "contributions":[
                 "front and search page development",
                 "testing and maintenance"
+             ],
+             "competencies":[
+                "Full-stack web development",
+                "REST API design and integration",
+                "Relational database management",
+                "Software quality assurance"
              ],
              "skills":[
                 "java",
@@ -102,7 +115,8 @@
                 "digitalization",
                 "open-source"
              ],
-             "period":"2021.04 ~ now"
+             "startDate":"2021.04",
+             "endDate":"now"
         }
        },
        "namespace": "resume",
@@ -110,7 +124,7 @@
        "owner": "Jinki Jung",
        "state": "ACTIVE",
           "act":{
-            "name": "MCP Service Registry (MSR) development"
+            "name": "Maritime Service Registry"
           },
           "goal":"MCP",
           "output":[
@@ -127,12 +141,12 @@
          },
          "about": {
             "resumeTheme":{
-               "background": "linear-gradient(#093637 70%, #22402D)",
+               "background": "#0e2420",
                "fontFace": "",
                "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "lightgray",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#d8ede8",
+               "secondaryFontColor": "#6ab89e",
                "thumbnail": "",
                "figure": ""
             },
@@ -141,11 +155,17 @@
              "category":[
                 "protocol", "front-end"
              ],
-             "description":"An implementation of MMS's protocol (MMTP) and front-end for demonstrating messaging capability",
+             "description":"The MMS is a universal messaging layer for ships and shore stations — it lets any two maritime parties exchange messages regardless of which communication technology (satellite, radio, cellular) each side is using. The MMS provides carrier-agnostic, geolocation-aware message routing across heterogeneous communication links, using MRNs as endpoint addresses and MMTP (Maritime Message Transfer Protocol) as the core protocol standardized by RTCM.",
              "contributions":[
                 "Maritime Message Transfer Protocol implementation with Go",
                 "design and implement an user-friendly web interface with React",
                 "apply OpenBridge 5.0 guideline to the interface"
+             ],
+             "competencies":[
+                "Network protocol design and implementation (Go)",
+                "React UI/UX development",
+                "OpenBridge 5.0 design guideline compliance",
+                "Cross-layer system integration"
              ],
              "skills":[
                 "Go",
@@ -162,7 +182,8 @@
                 "messaging service",
                 "open-source"
              ],
-             "period":"2021.08 ~ now"
+             "startDate":"2021.08",
+             "endDate":"now"
            }
          },
          "namespace": "resume",
@@ -170,7 +191,7 @@
          "owner": "Jinki Jung",
          "state": "ACTIVE",
           "act":{
-            "name": "Maritime Messaging Service (MMS) development"
+            "name": "Maritime Messaging Service"
           },
           "goal":"MCP",
           "output":[
@@ -192,14 +213,14 @@
          "id": "",
          "about": {
            "resumeTheme":{
-              "background": "linear-gradient(#fefae0 60%, #e9edc9, #ccd5ae)",
+              "background": "#1c1c0c",
               "fontFace": "",
-                 "titleFontColor": "black",
-                 "titleFontShadowColor": "lightgray",
-                 "contentFontColor": "black",
-                 "secondaryFontColor": "#14213d",
-                 "thumbnail": "",
-                 "figure": ""
+              "titleFontColor": "white",
+              "titleFontShadowColor": "transparent",
+              "contentFontColor": "#eeeedd",
+              "secondaryFontColor": "#a0a870",
+              "thumbnail": "",
+              "figure": ""
            },
            "resume": {
               "shortName": "MCP portal",
@@ -210,6 +231,12 @@
              "contributions":[
                 "lead developer",
                 "deployment to GitHub Pages through Github Actions"
+             ],
+             "competencies":[
+                "Lead front-end architecture (AngularJS)",
+                "CI/CD pipeline automation with GitHub Actions",
+                "Open-source project stewardship",
+                "User-facing admin interface design"
              ],
              "skills":[
                 "Typescript",
@@ -223,7 +250,8 @@
                 "management portal",
                 "open-source"
              ],
-             "period":"2022.06 ~ now"
+             "startDate":"2022.06",
+             "endDate":"now"
            }
          },
          "namespace": "resume",
@@ -231,7 +259,7 @@
          "owner": "Jinki Jung",
          "state": "ACTIVE",
             "act":{
-              "name": "MCP Management Portal development"
+              "name": "MCP Management Portal"
             },
             "goal":"MCP",
             "output":[
@@ -249,70 +277,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#03071e 70%, #370617)",
+            "background": "#1c1c1c",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "lightgray",
-               "thumbnail": "",
-               "figure": ""
-         },
-        "resume": {
-         "shortName": "MCP documentation",
-            "category":[
-                "documentation"
-             ],
-             "description":"an online documentation of MCP components",
-             "contributions":[
-                "lead developer",
-                "deployment through GitHub Actions and readthedocs.org"
-             ],
-             "skills":[
-                "markdown"
-             ],
-             "affiliation":{
-               "name": "DMC",
-               "link": "https://dmc.international/"
-             },
-             "keywords":[
-                "documentation",
-                "open-source"
-             ],
-             "period":"2020.06 ~ now"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "ACTIVE",
-          "act":{
-            "name": "MCP online documentation"
-         },
-          "goal":"MCP",
-          "output":[
-            {
-               "name": "GitHub repository",
-               "link": "https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net"
-            },
-            {
-               "name": "Web page",
-               "link": "https://docs.maritimeconnectivity.net/"
-            }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "linear-gradient(#edf6f9 80%, #ffddd2)",
-            "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "black",
-               "secondaryFontColor": "gray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#e8e8e8",
+            "secondaryFontColor": "#909090",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "iil",
@@ -324,6 +296,12 @@
                 "founder of iil",
                 "lead developer"
              ],
+             "competencies":[
+                "Domain-specific language design",
+                "Technical documentation and specification writing",
+                "Research-driven product definition",
+                "Independent project ownership"
+             ],
              "skills":[
                "markdown"
             ],
@@ -332,7 +310,8 @@
                "link": "https://jinkijung.github.io/"
              },
              "keywords":["efficiency", "modeling"],
-             "period":"2022.01 ~ now"
+             "startDate":"2022.01",
+             "endDate":"now"
         }
        },
        "namespace": "resume",
@@ -354,14 +333,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#324A5F, #1B2A41, #0C1821)",
+            "background": "#101828",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "lightgray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#d8e4f0",
+            "secondaryFontColor": "#7090b8",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "iil-todo",
@@ -372,6 +351,12 @@
              "description":"a todo-list app based on iil",
              "contributions":[
                 "lead developer"
+             ],
+             "competencies":[
+                "Full-stack application architecture",
+                "Agile solo feature delivery",
+                "Developer experience design",
+                "Bridging research concepts into product"
              ],
              "skills":[
                 "java",
@@ -388,7 +373,8 @@
                 "efficiency",
                 "open-source"
              ],
-             "period":"2022.01 ~ now"
+             "startDate":"2022.01",
+             "endDate":"now"
         }
        },
        "namespace": "resume",
@@ -410,14 +396,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#FE938C, #D496A7, #F1DEDE)",
+            "background": "#1e1018",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "#111D5E",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#eedde6",
+            "secondaryFontColor": "#b07898",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "Tasc",
@@ -428,6 +414,12 @@
              "description":"a Tasc-based Unity engine plugin facilitating easy and harmonized training scenario implementation, including three example applications",
              "contributions":[
                 "lead developer"
+             ],
+             "competencies":[
+                "Unity engine plugin development",
+                "Training scenario abstraction and modeling",
+                "Rapid prototyping with C#",
+                "Academic research to engineering translation"
              ],
              "skills":[
                 "Unity",
@@ -442,7 +434,8 @@
                 "efficiency",
                 "open-source"
              ],
-             "period":"2019.08 ~ 2020.04"
+             "startDate":"2019.08",
+             "endDate":"2020.04"
         }
        },
        "namespace": "resume",
@@ -450,7 +443,7 @@
        "owner": "Jinki Jung",
        "state": "DONE",
           "act":{
-            "name": "Virtual Training applications and script engine (Tasc)"
+            "name": "Virtual Training with Tasc"
           },
           "goal":"Virtuality for Safety",
           "output":[
@@ -480,23 +473,29 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#ABDAE1, #A3B9C9, #A09CB0)",
+            "background": "#141e2c",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "black",
-               "secondaryFontColor": "gray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#d5e2ee",
+            "secondaryFontColor": "#7090a8",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "MRR",
             "category":[
                 "front-end"
              ],
-             "description":"a discovery service of maritime resources using MRN and version",
+             "description":"The Maritime Resource Registry (MRR) is a universal directory for the maritime world, giving every object — whether a buoy, a document, or a digital service — a permanent, unique name so it can always be found and identified. It also manages the naming rules themselves, so the entire system stays organized and consistent as more organizations join. The MRR is implemented as a distributed, hierarchical REST API backed by a Neo4J graph database, storing versioned resource metadata keyed by MRN, while also managing ABNF-defined namespace syntax trees with authorization scoped to MRN namespaces.",
              "contributions":[
                 "interface development"
+             ],
+             "competencies":[
+                "React component development",
+                "UI library integration",
+                "Discovery service UX design",
+                "Maritime resource identifier (MRN) application"
              ],
              "skills":[
                 "Typescript",
@@ -511,7 +510,8 @@
                 "discovery service",
                 "open-source"
              ],
-             "period":"2022.04 ~ now"
+             "startDate":"2022.04",
+             "endDate":"now"
         }
        },
        "namespace": "resume",
@@ -519,7 +519,7 @@
        "owner": "Jinki Jung",
        "state": "ACTIVE",
           "act":{
-            "name": "Maritime Resource Registry (MRR) development"
+            "name": "Maritime Resource Registry"
           },
           "output":[
             {
@@ -536,14 +536,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#F7F7F2 90%, #E4E6C3, #899878)",
+            "background": "#141410",
             "fontFace": "",
-               "titleFontColor": "black",
-               "titleFontShadowColor": "lightgray",
-               "contentFontColor": "black",
-               "secondaryFontColor": "gray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#e8e8d8",
+            "secondaryFontColor": "#989878",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume" : {
          "shortName": "VoTT-MOAD",
@@ -554,6 +554,12 @@
              "description":"super-pixel based annotation support in VoTT",
              "contributions":[
                 "lead developer"
+             ],
+             "competencies":[
+                "Electron desktop application development",
+                "Annotation workflow UX design",
+                "ML training data pipeline tooling",
+                "Open-source fork management"
              ],
              "skills":[
                 "Typescript",
@@ -568,7 +574,8 @@
                 "data collection for ML",
                 "annotation tool"
              ],
-             "period":"2020.10 ~ 2021.11"
+             "startDate":"2020.10",
+             "endDate":"2021.11"
         }
        },
        "namespace": "resume",
@@ -594,14 +601,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#F6FFF8, #EAF4F4, #CCE3DE, #A4C3B2)",
+            "background": "#0e1c18",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "#2d232e",
-               "secondaryFontColor": "gray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#d5ece6",
+            "secondaryFontColor": "#60a890",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "VoTT-dot",
@@ -613,6 +620,12 @@
              "contributions":[
                 "lead front-end developer",
                 "lead back-end developer"
+             ],
+             "competencies":[
+                "Semi-automatic ML annotation system design",
+                "Backend and frontend integration",
+                "Performance optimization for real-time interaction",
+                "ML-assisted workflow engineering"
              ],
              "skills":[
                 "Typescript",
@@ -629,7 +642,8 @@
                 "data collection for ML",
                 "annotation tool"
              ],
-             "period":"2021.09 ~ now"
+             "startDate":"2021.09",
+             "endDate":"now"
         }
        },
        "namespace": "resume",
@@ -655,14 +669,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#588157, #0F7173, #D8A47F, #F05D5E)",
+            "background": "#1a1008",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "lightgray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#ede0d0",
+            "secondaryFontColor": "#a87850",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "AR for safety",
@@ -675,6 +689,12 @@
              "contributions":[
                 "lead researcher",
                 "lead Unity developer"
+             ],
+             "competencies":[
+                "VR/AR simulation development",
+                "Deep learning model integration",
+                "Safety system research and prototyping",
+                "Cross-domain research (HCI + ML + Safety)"
              ],
              "skills":[
                 "Unity",
@@ -689,7 +709,8 @@
                 "AR",
                 "deep learning"
              ],
-             "period":"2018.03 ~ 2018.10"
+             "startDate":"2018.03",
+             "endDate":"2018.10"
         }
        },
        "namespace": "resume",
@@ -715,14 +736,14 @@
        "id": "",
        "about": {
          "resumeTheme":{
-            "background": "linear-gradient(#240046 80%, #3c096c)",
+            "background": "#120a20",
             "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "black",
-               "contentFontColor": "white",
-               "secondaryFontColor": "lightgray",
-               "thumbnail": "",
-               "figure": ""
+            "titleFontColor": "white",
+            "titleFontShadowColor": "transparent",
+            "contentFontColor": "#e0d5f0",
+            "secondaryFontColor": "#9070c8",
+            "thumbnail": "",
+            "figure": ""
          },
         "resume": {
          "shortName": "MLVT",
@@ -731,6 +752,12 @@
          "contributions":[
             "AR engine integration",
             "performance optimization"
+         ],
+         "competencies":[
+            "Real-time 6DOF tracking implementation (C++)",
+            "Computer vision engineering with OpenCV",
+            "Performance optimization for mobile AR",
+            "Academic research to production code"
          ],
          "skills":[
             "cplusplus",
@@ -744,7 +771,8 @@
             "AR",
             "real-time system"
          ],
-         "period":"2010.09 ~ 2014.12"
+         "startDate":"2010.09",
+             "endDate":"2014.12"
         }
        },
        "namespace": "resume",
@@ -767,4 +795,3 @@
        }
     ]
  }
- 

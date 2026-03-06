@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import data from '../data/career.json';
+import data from '../data/career-en.json';
 import { Section } from "./Section";
 import './Main.scss';
 import { Header } from "./Header";

@@ -1,0 +1,149 @@
+$ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+/* ═══════════════════════════════════════
+   Shared snap page base
+   ═══════════════════════════════════════ */
+.section-hero,
+.section-detail {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    overflow: hidden;
+}
+
+/* ═══════════════════════════════════════
+   Detail page: scroll-driven via --p
+   --p ranges from 0 (hero state) to 1 (compact state)
+   ═══════════════════════════════════════ */
+.section-detail {
+    --p: 0;
+}
+
+/* ═══════════════════════════════════════
+   Section body — hidden at --p:0, visible at --p:1
+   opacity starts after --p passes 0.5
+   ═══════════════════════════════════════ */
+.section-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-grow: 0;
+    opacity: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.section-detail .section-body {
+    flex-grow: calc(var(--p) * 100);
+    opacity: clamp(0, calc(var(--p) * 2.5 - 1.5), 1);
+}
+
+/* ═══════════════════════════════════════
+   Zone columns
+   ═══════════════════════════════════════ */
+.section-zone {
+    display: flex;
+    align-items: stretch;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    overflow: auto;
+
+    &--right {
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+        border-left: 1px solid rgba(128, 128, 128, 0.15);
+    }
+}
+
+.section-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-card-header {
+    padding-bottom: 0.5rem !important;
+}
+
+.section-card-title {
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    opacity: 0.75;
+}
+
+.section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    li {
+        font-size: 0.95rem;
+        line-height: 1.45;
+        padding-left: 1.1em;
+        position: relative;
+
+        &::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            opacity: 0.5;
+            font-size: 0.8em;
+        }
+    }
+}
+
+.section-skills {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.section-skills-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    opacity: 0.6;
+    margin: 0 0 0.6rem 0;
+}
+
+.section-skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.section-skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+
+    span {
+        font-size: 0.65rem;
+        opacity: 0.7;
+    }
+}
+
+/* ═══════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════ */
+@media (max-width: 768px) {
+    .section-body {
+        grid-template-columns: 1fr;
+    }
+
+    .section-zone {
+        padding: 1rem 1.5rem;
+
+        &--right {
+            padding: 1rem 1.5rem;
+            border-left: none;
+            border-top: 1px solid rgba(128, 128, 128, 0.15);
+        }
+    }
+}

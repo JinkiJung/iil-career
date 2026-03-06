@@ -34,7 +34,7 @@ export const Header = () => {
             <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
                 <div style={boxStyle}>
                     <div style={titleStyle}>Jinki Jung</div>
-                    <img src={window.location.origin + process.env.PUBLIC_URL + "/jinki_profile.png"} alt="profile pic" height="150px"></img>
+                    <img src={import.meta.env.BASE_URL + "jinki_profile.png"} alt="profile pic" height="150px"></img>
                     <div style={descriptionStyle}>developer career page</div>
                 </div>
             </Container>

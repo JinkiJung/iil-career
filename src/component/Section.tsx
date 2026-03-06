@@ -1,129 +1,127 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { useEffect, useRef } from "react";
+import { Overview } from "./Overview";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import './Section.scss';
 
 export interface SectionProp {
     item: any;
     index: number;
 }
 
-export const Section = ({item, index}: SectionProp) => {
-    let careerTextAlignment, outputTextAlignment, careerAlignment, outputAlignment, deviconAlignment;
-    if (index % 2) {
-        careerTextAlignment = 'text-start';
-        outputTextAlignment = 'text-end';
-        careerAlignment = 'left';
-        outputAlignment = 'right';
-        deviconAlignment = 'flex-row';
-    } else {
-        careerTextAlignment = 'text-end';
-        outputTextAlignment = 'text-start';
-        careerAlignment = 'right';
-        outputAlignment = 'left';
-        deviconAlignment = 'flex-row-reverse';
-    }
+export const Section = ({ item }: SectionProp) => {
+    const resume = item.about.resume;
+    const theme = item.about.resumeTheme;
+    const contentColor = theme.contentFontColor;
+    const secondaryColor = theme.secondaryFontColor;
+
+    const detailRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const el = detailRef.current;
+        if (!el) return;
+        const container = el.closest('.careerContainer') as HTMLElement;
+        if (!container) return;
+
+        const onScroll = () => {
+            const rect = el.getBoundingClientRect();
+            const vh = window.innerHeight;
+            // p goes from 0 (detail page just entering from bottom) to 1 (fully in view)
+            const p = Math.max(0, Math.min(1, 1 - rect.top / vh));
+            el.style.setProperty('--p', p.toFixed(3));
+        };
+
+        container.addEventListener('scroll', onScroll, { passive: true });
+        onScroll(); // initial calculation
+        return () => container.removeEventListener('scroll', onScroll);
+    }, []);
+
+    const cardStyle = {
+        background: 'rgba(0,0,0,0.12)',
+        backdropFilter: 'blur(4px)',
+        border: `1px solid rgba(128,128,128,0.2)`,
+        borderRadius: '12px',
+    };
+
     return (
-        <Row className="w-100 d-flex careerItem p-0 m-0">
-            <Container style={{ backgroundImage: item.about.resumeTheme.background, display: 'flex', flexDirection: 'column', height: '100vh' }}>
-                    <Row style={{ flexGrow: 0, paddingBottom: '8px' }}>
-                        <Col xs={1} className="p-0"></Col>
-                        <Col>
-                            <Row>
-                            <Col className="text-start p-0">
-                                <span style={{color: item.about.resumeTheme.contentFontColor}}>{item.about.resume?.keywords.join(', ')}</span>
-                            </Col>
-                            <Col className="text-end p-0">
-                                <Row style={{justifyContent:'right'}}>
-                                    <span style={{color: item.about.resumeTheme.contentFontColor}}>affiliation: <a target="_blank" rel="noreferrer" href={item.about.resume?.affiliation.link}>{item.about.resume?.affiliation.name}</a>, {item.about.resume?.period}</span>
-                                </Row>
-                            </Col>
-                            </Row>
-                        </Col>
-                        <Col xs={1} className="p-0"></Col>
-                    </Row>
-                    <Row style={{ flexGrow: 1 }}>
-                        <Col xs={1} className="p-0"></Col>
-                        <Col className={`p-0 fs-2 ${careerTextAlignment}`}>
-                            <div className={`fs-5 fw-bold `}>
-                                <span style={{color: item.about.resumeTheme.secondaryFontColor}}>
-                                    {item.about.resume?.category.join(', ')}
-                                </span>
-                            </div>
-                            <div>
-                                <span style={
-                                    {
-                                        color: item.about.resumeTheme.titleFontColor,
-                                        textShadow: `2px 2px 0 ${item.about.resumeTheme.titleFontShadowColor}, -1px -1px 0 ${item.about.resumeTheme.titleFontShadowColor}, 1px -1px 0 ${item.about.resumeTheme.titleFontShadowColor}, -1px 1px 0 ${item.about.resumeTheme.titleFontShadowColor}, 1px 1px 0 ${item.about.resumeTheme.titleFontShadowColor}`,
-                                    }
-                                    }>
-                                    {item.act.name}
-                                </span>
-                            </div>
-                            <div className={`p-0 fs-5 ${careerTextAlignment}`}>
-                                <span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                    {item.about.resume?.description}
-                                </span>
-                            </div>
-                        </Col>
-                        <Col xs={1} className="p-0"></Col>
-                    </Row>
-                    <Row style={{ flexGrow: 1 }}>
-                    </Row>
-                    <Row style={{ flexGrow: 1 }}>
-                        <Col xs={1} className="p-0"></Col>
-                        <Col>
-                            <Row style={{justifyContent:`${careerAlignment}`}} className={`fs-5 ${careerTextAlignment}`}>
-                                <span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                    <h4>Contribution</h4>
-                                </span>
-                            </Row>
-                            <Row style={{justifyContent:`${careerAlignment}`}} className={` ${careerTextAlignment}`}>
-                                    {item.about.resume?.contributions.map((e: string) => <i key={e}><span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                        {e}
-                                    </span></i>)}
-                            </Row>
-                            <Row style={{justifyContent:`${careerAlignment}`}} className={`fs-5 ${careerTextAlignment} pt-2`}>
-                                <span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                    <b>Language and framework</b>
-                                </span>
-                                <div className={`d-flex mb-3  ${deviconAlignment}`}>
-                                    {item.about.resume?.skills.map((iconName: string) => 
-                                        <div className="p-2">
-                                        <span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                            <img key={iconName} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`} height={50} alt={iconName}/>
-                                            <br />
-                                            {iconName}
-                                        </span>
+        <>
+            {/* Hero page — static, full-screen overview */}
+            <div
+                className="section-hero careerItem"
+                style={{ backgroundColor: theme.background }}
+            >
+                <Overview item={item} />
+            </div>
+
+            {/* Detail page — scroll-driven transition via --p */}
+            <div
+                ref={detailRef}
+                className="section-detail careerItem"
+                style={{ backgroundColor: theme.background }}
+            >
+                <Overview item={item} />
+
+                <div className="section-body">
+                    {/* My Contributions */}
+                    <div className="section-zone">
+                        <Card style={cardStyle} className="section-card">
+                            <CardHeader className="section-card-header">
+                                <CardTitle style={{ color: contentColor }} className="section-card-title">
+                                    My Contributions
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <ul className="section-list">
+                                    {resume?.contributions?.map((c: string) => (
+                                        <li key={c} style={{ color: contentColor }}>
+                                            {c}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </CardContent>
+                        </Card>
+                    </div>
+
+                    {/* Competencies Demonstrated */}
+                    <div className="section-zone section-zone--right">
+                        <Card style={cardStyle} className="section-card">
+                            <CardHeader className="section-card-header">
+                                <CardTitle style={{ color: contentColor }} className="section-card-title">
+                                    Competencies Demonstrated
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <ul className="section-list">
+                                    {resume?.competencies?.map((c: string) => (
+                                        <li key={c} style={{ color: contentColor }}>
+                                            {c}
+                                        </li>
+                                    ))}
+                                </ul>
+                                {resume?.skills && resume.skills.length > 0 && (
+                                    <div className="section-skills">
+                                        <p className="section-skills-label" style={{ color: secondaryColor }}>
+                                            Tech Stack
+                                        </p>
+                                        <div className="section-skills-icons">
+                                            {resume.skills.map((iconName: string) => (
+                                                <div key={iconName} className="section-skill-item">
+                                                    <img
+                                                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`}
+                                                        height={32}
+                                                        alt={iconName}
+                                                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                                                    />
+                                                    <span style={{ color: secondaryColor }}>{iconName}</span>
+                                                </div>
+                                            ))}
                                         </div>
-                                    )}
-                                </div>
-                                
-                            </Row>
-                        </Col>
-                        <Col xs={1} className="p-0"></Col>
-                    </Row>
-                    <Row style={{ flexGrow: 1 }}>
-                        <Col xs={1} className="p-0"></Col>
-                        <Col className={`p-0 fs-5 ${careerTextAlignment}`}>
-                            
-                        </Col>
-                        <Col xs={1} className="p-0"></Col>
-                    </Row>             
-                    <Row style={{ flexGrow: 0 }} className="pb-5">
-                        <Col xs={1}></Col>
-                        <Col>
-                            <Row style={{justifyContent:`${outputAlignment}`}} className={`fs-4 ${outputTextAlignment}`}>
-                                <span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                    Reference
-                                </span> 
-                            </Row>
-                            <Row style={{justifyContent:`${outputAlignment}`}} className={`fs-5 ${outputTextAlignment}`}>
-                                <span style={{color: item.about.resumeTheme.contentFontColor}}>
-                                    {item.output?.map((t: any) => <div key={t.name}><a href={t.link}>{t.name}</a></div>)}
-                                </span>
-                            </Row>
-                        </Col>
-                        <Col xs={1}></Col>
-                    </Row>
-                </Container>
-        </Row>
+                                    </div>
+                                )}
+                            </CardContent>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </>
     );
-}
+};
