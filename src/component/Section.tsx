@@ -27,29 +27,44 @@ export const Section = ({ item }: SectionProp) => {
         const onScroll = () => {
             const rect = outer.getBoundingClientRect();
             const vh = window.innerHeight;
-            const scrollable = outer.offsetHeight - vh;
-            if (scrollable <= 0) return;
             const scrolled = Math.max(0, -rect.top);
 
+            // Dead zones: 80vh at top and bottom where nothing changes
+            const deadTop = vh * 0.8;
+            const deadBottom = vh * 0.8;
+            const totalScrollable = outer.offsetHeight - vh;
+
+            // Active zone = total minus both dead zones
+            const activeStart = deadTop;
+            const activeEnd = totalScrollable - deadBottom;
+            const effective = Math.max(0, Math.min(scrolled - activeStart, activeEnd - activeStart));
+
             // gapMax = remaining space above overview to center it vertically
-            // minimum 10% of vh so there's always a deadzone before p starts
             const overviewEl = sticky.querySelector('.overview-container') as HTMLElement;
             const overviewH = overviewEl ? overviewEl.offsetHeight : 0;
             const gapMax = Math.max(vh * 0.1, (vh - overviewH) / 2);
-            // --g: gap height in px, shrinks from gapMax to 0 by scrolled amount
-            const g = Math.max(0, gapMax - scrolled*0.1);
+
+            // Phase 1: gap shrinks (effective 0 → gapMax)
+            const g = Math.max(0, gapMax - effective);
             sticky.style.setProperty('--g', `${g.toFixed(1)}px`);
 
-            // --p: starts increasing only after gap is fully consumed (scrolled > gapMax)
+            // Phase 2: p increases (effective gapMax → activeZone)
+            const activeZone = activeEnd - activeStart;
             let p = 0;
-            if (scrolled > gapMax) {
-                const remaining = scrollable - gapMax;
-                p = remaining > 0
-                    ? Math.min(1, (scrolled - gapMax) / remaining)
+            if (effective > gapMax) {
+                const transitionZone = activeZone - gapMax;
+                p = transitionZone > 0
+                    ? Math.min(1, (effective - gapMax) / transitionZone)
                     : 1;
             }
             sticky.style.setProperty('--p', p.toFixed(3));
-            console.log({ rectTop: +rect.top.toFixed(0), scrolled: +scrolled.toFixed(0), g: +g.toFixed(1), p: +p.toFixed(3) });
+
+            const phase = scrolled < deadTop ? 'DEAD_TOP'
+                : effective < gapMax ? 'GAP_SHRINK'
+                : p < 1 ? 'TRANSITION'
+                : scrolled < activeEnd + deadTop ? 'P_DONE'
+                : 'DEAD_BOTTOM';
+            console.log({ phase, scrolled: +scrolled.toFixed(0), effective: +effective.toFixed(0), g: +g.toFixed(1), p: +p.toFixed(3) });
         };
 
         container.addEventListener('scroll', onScroll, { passive: true });
