@@ -5,6 +5,13 @@
 .section-outer {
     width: 100%;
     height: 410vh; /* 80vh dead-top + 250vh content + 80vh dead-bottom */
+    padding-left: 36px;
+}
+
+@media (max-width: 768px) {
+    .section-outer {
+        padding-left: 0;
+    }
 }
 
 /* ═══════════════════════════════════════

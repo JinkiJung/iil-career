@@ -1,0 +1,101 @@
+.scroll-ruler {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 36px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.scroll-ruler-track {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    pointer-events: auto;
+}
+
+.scroll-ruler-tick {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.scroll-ruler-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    margin-left: 14px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.scroll-ruler-tick--active .scroll-ruler-dot {
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.scroll-ruler-label {
+    font-size: 0.5rem;
+    color: rgba(255, 255, 255, 0.35);
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.scroll-ruler-tick--active .scroll-ruler-label {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.scroll-ruler-tick:hover .scroll-ruler-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Tooltip — hidden by default, fades in on hover */
+.scroll-ruler-tooltip {
+    position: absolute;
+    left: 100%;
+    margin-left: 8px;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.scroll-ruler-tick:hover .scroll-ruler-tooltip {
+    opacity: 1;
+}
+
+/* Line connecting dots */
+.scroll-ruler-track::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hide on small screens */
+@media (max-width: 768px) {
+    .scroll-ruler {
+        display: none;
+    }
+}
