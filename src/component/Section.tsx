@@ -29,11 +29,27 @@ export const Section = ({ item }: SectionProp) => {
             const vh = window.innerHeight;
             const scrollable = outer.offsetHeight - vh;
             if (scrollable <= 0) return;
-            const scrolled = -rect.top;
-            const deadzone = 50;
-            const effective = Math.max(0, scrolled - deadzone);
-            const p = Math.max(0, Math.min(1, effective / (scrollable - deadzone)));
+            const scrolled = Math.max(0, -rect.top);
+
+            // gapMax = remaining space above overview to center it vertically
+            // minimum 10% of vh so there's always a deadzone before p starts
+            const overviewEl = sticky.querySelector('.overview-container') as HTMLElement;
+            const overviewH = overviewEl ? overviewEl.offsetHeight : 0;
+            const gapMax = Math.max(vh * 0.1, (vh - overviewH) / 2);
+            // --g: gap height in px, shrinks from gapMax to 0 by scrolled amount
+            const g = Math.max(0, gapMax - scrolled*0.1);
+            sticky.style.setProperty('--g', `${g.toFixed(1)}px`);
+
+            // --p: starts increasing only after gap is fully consumed (scrolled > gapMax)
+            let p = 0;
+            if (scrolled > gapMax) {
+                const remaining = scrollable - gapMax;
+                p = remaining > 0
+                    ? Math.min(1, (scrolled - gapMax) / remaining)
+                    : 1;
+            }
             sticky.style.setProperty('--p', p.toFixed(3));
+            console.log({ rectTop: +rect.top.toFixed(0), scrolled: +scrolled.toFixed(0), g: +g.toFixed(1), p: +p.toFixed(3) });
         };
 
         container.addEventListener('scroll', onScroll, { passive: true });

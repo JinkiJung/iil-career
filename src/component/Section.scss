@@ -13,6 +13,7 @@
    ═══════════════════════════════════════ */
 .section-sticky {
     --p: 0;
+    --g: 20vh;
     position: sticky;
     top: 0;
     width: 100%;
@@ -27,7 +28,8 @@
    shrinks to 0 as --p goes 0→1
    ═══════════════════════════════════════ */
 .section-top-gap {
-    flex-grow: calc((1 - var(--p)) * 100);
+    height: var(--g);
+    flex-shrink: 0;
 }
 
 /* ═══════════════════════════════════════
@@ -153,5 +155,13 @@
             border-left: none;
             border-top: 1px solid rgba(128, 128, 128, 0.15);
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .section-sticky {
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
     }
 }

@@ -214,6 +214,12 @@
         padding-left: 0;
     }
 
+    .section-sticky .overview-meta-col--summary {
+        opacity: calc(1 - var(--p));
+        max-height: calc((1 - var(--p)) * 200px);
+        overflow: hidden;
+    }
+
     .overview-title {
         font-size: clamp(2.5rem, 10vw, 5rem);
     }
