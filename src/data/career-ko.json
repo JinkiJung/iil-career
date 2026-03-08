@@ -549,8 +549,9 @@
          "owner": "정진기",
          "state": "ACTIVE",
          "act": {
-            "name": "해양 자원 등록부 (MRR) 개발"
+            "name": "해양 자원 등록부 (MRR)"
          },
+         "goal": "e-navigation",
          "output": [
             {
                "name": "GitHub 저장소",

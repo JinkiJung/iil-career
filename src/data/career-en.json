@@ -551,6 +551,7 @@
          "act": {
             "name": "Maritime Resource Registry"
          },
+         "goal": "e-navigation",
          "output": [
             {
                "name": "GitHub repository",
