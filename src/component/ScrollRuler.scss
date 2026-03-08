@@ -93,6 +93,30 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
+/* ═══════════════════════════════════════
+   Fade overlay for section navigation
+   ═══════════════════════════════════════ */
+.scroll-fade-overlay {
+    position: fixed;
+    inset: 0;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.scroll-fade-overlay.scroll-fade-in {
+    opacity: 1;
+    transition: opacity 0.25s ease-in;
+    pointer-events: all;
+}
+
+.scroll-fade-overlay.scroll-fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    pointer-events: none;
+}
+
 /* Hide on small screens */
 @media (max-width: 768px) {
     .scroll-ruler {

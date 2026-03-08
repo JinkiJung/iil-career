@@ -45,9 +45,29 @@ export const ScrollRuler = ({ entries }: ScrollRulerProps) => {
     const scrollTo = (index: number) => {
         const container = document.querySelector('.careerContainer') as HTMLElement;
         const outers = container?.querySelectorAll('.section-outer');
-        if (outers?.[index]) {
-            outers[index].scrollIntoView({ behavior: 'smooth' });
+        if (!outers?.[index]) return;
+
+        // Get or create the fade overlay
+        let overlay = document.querySelector('.scroll-fade-overlay') as HTMLElement;
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.className = 'scroll-fade-overlay';
+            document.body.appendChild(overlay);
         }
+
+        // Fade in to black
+        overlay.classList.remove('scroll-fade-out');
+        overlay.classList.add('scroll-fade-in');
+
+        // After fade-in completes, scroll instantly then fade out
+        setTimeout(() => {
+            outers[index].scrollIntoView({ behavior: 'instant' });
+            // Small delay to let the scroll settle
+            requestAnimationFrame(() => {
+                overlay.classList.remove('scroll-fade-in');
+                overlay.classList.add('scroll-fade-out');
+            });
+        }, 250);
     };
 
     return (
