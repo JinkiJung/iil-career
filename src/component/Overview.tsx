@@ -34,6 +34,13 @@ export const Overview = ({ item }: OverviewProps) => {
                 <p className="overview-subtitle" style={{ color: secondaryColor }}>
                     {resume?.affiliation?.name} &middot; {resume?.startDate} — {resume?.endDate}
                 </p>
+                <div className="overview-hero-image">
+                    <img
+                        src={`/iil-career/images/${encodeURIComponent(resume?.shortName)}.png`}
+                        alt={resume?.shortName}
+                        className="overview-hero-img"
+                    />
+                </div>
             </div>
 
             {/* Divider */}
@@ -53,10 +60,23 @@ export const Overview = ({ item }: OverviewProps) => {
                     </span>
                 </div>
 
-                {/* Col 2: Tags (category + keywords) */}
+                {/* Col 2: Team & Role */}
+                <div className="overview-meta-col overview-meta-col--team">
+                    <span className="overview-meta-label" style={{ color: secondaryColor }}>
+                        Team / Role
+                    </span>
+                    <span className="overview-meta-team" style={{ color: contentColor }}>
+                        {resume?.team}
+                    </span>
+                    <span className="overview-meta-role" style={{ color: secondaryColor }}>
+                        {resume?.myRole}
+                    </span>
+                </div>
+
+                {/* Col 3: Tags (category + keywords) */}
                 <div className="overview-meta-col overview-meta-col--tags">
                     <span className="overview-meta-label" style={{ color: secondaryColor }}>
-                        Category &amp; Keywords
+                        Keywords
                     </span>
                     <div className="overview-badges">
                         {allTags.map((tag: string) => (

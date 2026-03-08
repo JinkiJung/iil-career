@@ -2,14 +2,83 @@
    "frontPage": {
       "title": "Jinki Jung's career"
    },
-    "career":[
-       {
+   "career": [
+      {
+         "id": "",
+         "help": {
+            "click": "https://aivenautics.com"
+         },
+         "about": {
+            "resumeTheme": {
+               "background": "#0f1e30",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#e8edf5",
+               "secondaryFontColor": "#8fa3c8",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "chatsea",
+               "category": [
+                  "PM"
+               ],
+               "description": "Ch@tSea is a secure maritime communication app built on the Maritime Connectivity Platform (MCP), connecting vessels, safety services, and real-time hazard information in one trusted environment. It empowers vessel operators of all kinds to navigate more safely through location-based messaging, instant hazard sharing, and subscription-based maritime safety services.",
+               "myContributions": [
+                  "project management",
+                  "develop web front-end components"
+               ],
+               "myCompetencies": [
+                  "Realization of MCP",
+                  "Architecture setup",
+                  "Documentation for remote work"
+               ],
+               "techStack": [
+                  "react"
+               ],
+               "affiliation": {
+                  "name": "AIVeNautics",
+                  "link": "https://aivenautics.com/"
+               },
+               "keywords": [
+                  "iOS app",
+                  "e-navigation service",
+                  "MCP"
+               ],
+               "startDate": "2025.05",
+               "endDate": "now",
+               "team": "Team of 7",
+               "myRole":"PM & Software Developer",
+               "features": ["Location-Based Messaging", "Real-Time Hazard Sharing", "Subscription-Based Safety Service Aggregation", "MCP-Powered Secure Connectivity", "MRN-Based Trusted Identity", "e-Navigation Standards Compliance"]
+            }
+         },
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "ACTIVE",
+         "act": {
+            "name": "Ch@tSea"
+         },
+         "goal": "commercialization",
+         "output": [
+            {
+               "name": "App Store link",
+               "link": "https://apps.apple.com/us/app/chatsea/id6745332004"
+            },
+            {
+               "name": "Official webpage",
+               "link": "https://chatsea.net/"
+            }
+         ]
+      },
+      {
          "id": "",
          "help": {
             "click": "https://dmc.international/"
          },
          "about": {
-            "resumeTheme":{
+            "resumeTheme": {
                "background": "#1a2744",
                "fontFace": "",
                "titleFontColor": "white",
@@ -19,128 +88,133 @@
                "thumbnail": "",
                "figure": ""
             },
-           "resume": {
-            "shortName": "MIR",
-             "category":[
-                "back-end"
-             ],
-             "description":"The MIR is the digital passport system for the maritime world — it gives every ship, person, organization, and device a unique, verified identity so they can be trusted when communicating or exchanging data at sea. The MIR provides PKI-based identity management for MCP entities — assigning each a unique MRN, issuing bound X.509 certificates, and enabling OAuth 2.0 / OpenID Connect-based auth within a distributed trust framework governed by audited security profiles.",
-             "contributions":[
-                "distributed MIR development",
-                "MMS integration as entity type",
-                "deployment of MIR"
-             ],
-             "competencies":[
-                "Distributed systems architecture",
-                "PKI & OIDC security engineering",
-                "Containerized deployment with Docker",
-                "Open-source project contribution"
-             ],
-             "skills":[
-                "java",
-                "spring",
-                "docker"
-             ],
-             "affiliation":{
-               "name": "DMC",
-               "link": "https://dmc.international/"
-             },
-             "keywords":[
-                "cyber security",
-                "authentication",
-                "digitalization",
-                "open-source"
-             ],
-             "startDate":"2019.04",
-             "endDate":"now"
-           }
+            "resume": {
+               "shortName": "MIR",
+               "category": [
+                  "back-end"
+               ],
+               "description": "The MIR is the digital passport system for the maritime world — it gives every ship, person, organization, and device a unique, verified identity so they can be trusted when communicating or exchanging data at sea.",
+               "myContributions": [
+                  "distributed MIR development",
+                  "MMS integration as entity type",
+                  "deployment of MIR"
+               ],
+               "myCompetencies": [
+                  "Distributed systems architecture",
+                  "PKI & OIDC security engineering",
+                  "Containerized deployment with Docker",
+                  "Open-source project contribution"
+               ],
+               "techStack": [
+                  "java",
+                  "spring",
+                  "docker"
+               ],
+               "affiliation": {
+                  "name": "DMC",
+                  "link": "https://dmc.international/"
+               },
+               "keywords": [
+                  "cyber security",
+                  "authentication",
+                  "digitalization",
+                  "open-source"
+               ],
+               "startDate": "2019.04",
+               "endDate": "2025.04",
+               "team": "MCC IDSEC WG",
+               "features": ["PKI / Certificate Authority", "OAuth 2.0 / OpenID Connect", "Identity & Access Management", "Distributed Trust System"]
+            }
          },
          "namespace": "resume",
          "actor": "Jinki Jung",
          "owner": "Jinki Jung",
          "state": "ACTIVE",
-          "act":{
+         "act": {
             "name": "Maritime Identity Registry"
-          },
-          "goal":"MCP",
-          "output":[
+         },
+         "goal": "MCP",
+         "output": [
             {
                "name": "GitHub repository",
                "link": "https://github.com/maritimeconnectivity/IdentityRegistry"
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#0d2030",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#ddeef5",
-            "secondaryFontColor": "#6fa8c0",
-            "thumbnail": "",
-            "figure": ""
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#0d2030",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#ddeef5",
+               "secondaryFontColor": "#6fa8c0",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "MSR",
+               "category": [
+                  "front-end",
+                  "back-end"
+               ],
+               "description": "The MSR is a searchable directory of maritime digital services — it doesn't deliver the services itself, but tells you what services exist, what information they provide, and how to connect to them. The MSR stores service specifications conforming to IALA Guideline G1128 and manages the lifecycle of provisioned service instances, enabling discovery via faceted search across keywords, organizations, and geolocation.",
+               "myContributions": [
+                  "front and search page development",
+                  "testing and maintenance"
+               ],
+               "myCompetencies": [
+                  "Full-stack web development",
+                  "REST API design and integration",
+                  "Relational database management",
+                  "Software quality assurance"
+               ],
+               "techStack": [
+                  "java",
+                  "spring",
+                  "javascript",
+                  "postgresql"
+               ],
+               "affiliation": {
+                  "name": "DMC",
+                  "link": "https://dmc.international/"
+               },
+               "keywords": [
+                  "service discovery",
+                  "digitalization",
+                  "open-source"
+               ],
+               "startDate": "2021.04",
+               "endDate": "2025.04",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": ["Service Discovery", "Metadata Management", "REST API", "Geospatial Search & Filtering", "SECOM Interface"]
+            }
          },
-        "resume": {
-         "shortName": "MSR",
-            "category":[
-               "front-end",
-                "back-end"
-             ],
-             "description":"The MSR is a searchable directory of maritime digital services — it doesn't deliver the services itself, but tells you what services exist, what information they provide, and how to connect to them. The MSR stores service specifications conforming to IALA Guideline G1128 and manages the lifecycle of provisioned service instances, enabling discovery via faceted search across keywords, organizations, and geolocation.",
-             "contributions":[
-                "front and search page development",
-                "testing and maintenance"
-             ],
-             "competencies":[
-                "Full-stack web development",
-                "REST API design and integration",
-                "Relational database management",
-                "Software quality assurance"
-             ],
-             "skills":[
-                "java",
-                "spring",
-                "javascript",
-                "postgresql"
-             ],
-             "affiliation":{
-               "name": "DMC",
-               "link": "https://dmc.international/"
-             },
-             "keywords":[
-                "service discovery",
-                "digitalization",
-                "open-source"
-             ],
-             "startDate":"2021.04",
-             "endDate":"now"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "ACTIVE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "ACTIVE",
+         "act": {
             "name": "Maritime Service Registry"
-          },
-          "goal":"MCP",
-          "output":[
+         },
+         "goal": "MCP",
+         "output": [
             {
                "name": "GitHub repository",
                "link": "https://github.com/maritimeconnectivity/ServiceRegistry"
             }
-          ]
-       },
-       {
+         ]
+      },
+      {
          "id": "",
          "help": {
             "click": "https://dmc.international/"
          },
          "about": {
-            "resumeTheme":{
+            "resumeTheme": {
                "background": "#0e2420",
                "fontFace": "",
                "titleFontColor": "white",
@@ -150,51 +224,55 @@
                "thumbnail": "",
                "figure": ""
             },
-           "resume": {
-            "shortName": "MMS",
-             "category":[
-                "protocol", "front-end"
-             ],
-             "description":"The MMS is a universal messaging layer for ships and shore stations — it lets any two maritime parties exchange messages regardless of which communication technology (satellite, radio, cellular) each side is using. The MMS provides carrier-agnostic, geolocation-aware message routing across heterogeneous communication links, using MRNs as endpoint addresses and MMTP (Maritime Message Transfer Protocol) as the core protocol standardized by RTCM.",
-             "contributions":[
-                "Maritime Message Transfer Protocol implementation with Go",
-                "design and implement an user-friendly web interface with React",
-                "apply OpenBridge 5.0 guideline to the interface"
-             ],
-             "competencies":[
-                "Network protocol design and implementation (Go)",
-                "React UI/UX development",
-                "OpenBridge 5.0 design guideline compliance",
-                "Cross-layer system integration"
-             ],
-             "skills":[
-                "Go",
-                "React",
-                "Typescript"
-             ],
-             "affiliation":{
-               "name": "DMC",
-               "link": "https://dmc.international/"
-             },
-             "keywords":[
-                "network",
-                "standardization",
-                "messaging service",
-                "open-source"
-             ],
-             "startDate":"2021.08",
-             "endDate":"now"
-           }
+            "resume": {
+               "shortName": "MMS",
+               "category": [
+                  "protocol",
+                  "front-end"
+               ],
+               "description": "The MMS is a universal messaging layer for ships and shore stations — it lets any two maritime parties exchange messages regardless of which communication technology (satellite, radio, cellular) each side is using. The MMS provides carrier-agnostic, geolocation-aware message routing across heterogeneous communication links, using MRNs as endpoint addresses and MMTP (Maritime Message Transfer Protocol) as the core protocol standardized by RTCM.",
+               "myContributions": [
+                  "Maritime Message Transfer Protocol implementation with Go",
+                  "design and implement an user-friendly web interface with React",
+                  "apply OpenBridge 5.0 guideline to the interface"
+               ],
+               "myCompetencies": [
+                  "Network protocol design and implementation (Go)",
+                  "React UI/UX development",
+                  "OpenBridge 5.0 design guideline compliance",
+                  "Cross-layer system integration"
+               ],
+               "techStack": [
+                  "Go",
+                  "React",
+                  "Typescript"
+               ],
+               "affiliation": {
+                  "name": "DMC",
+                  "link": "https://dmc.international/"
+               },
+               "keywords": [
+                  "network",
+                  "standardization",
+                  "messaging service",
+                  "open-source"
+               ],
+               "startDate": "2021.08",
+               "endDate": "2025.04",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": ["Carrier-Agnostic Messaging", "Gateway Integration", "Address Routing by MRN", "Multi-link Communication (Cellular / VDES)"]
+            }
          },
          "namespace": "resume",
          "actor": "Jinki Jung",
          "owner": "Jinki Jung",
          "state": "ACTIVE",
-          "act":{
+         "act": {
             "name": "Maritime Messaging Service"
-          },
-          "goal":"MCP",
-          "output":[
+         },
+         "goal": "MCP",
+         "output": [
             {
                "name": "GitHub repository for front-end",
                "link": "https://github.com/Digital-Maritime-Consultancy/mms-demo-react"
@@ -207,246 +285,195 @@
                "name": "MMS demonstrator (currently only works with http, not https)",
                "link": "http://mms-demo.dmc.international/"
             }
-          ]
-       },
-       {
+         ]
+      },
+      {
          "id": "",
          "about": {
-           "resumeTheme":{
-              "background": "#1c1c0c",
-              "fontFace": "",
-              "titleFontColor": "white",
-              "titleFontShadowColor": "transparent",
-              "contentFontColor": "#eeeedd",
-              "secondaryFontColor": "#a0a870",
-              "thumbnail": "",
-              "figure": ""
-           },
-           "resume": {
-              "shortName": "MCP portal",
-             "category":[
-                "front-end"
-             ],
-             "description":"an interface for organization administrators who manages resources through MCP",
-             "contributions":[
-                "lead developer",
-                "deployment to GitHub Pages through Github Actions"
-             ],
-             "competencies":[
-                "Lead front-end architecture (AngularJS)",
-                "CI/CD pipeline automation with GitHub Actions",
-                "Open-source project stewardship",
-                "User-facing admin interface design"
-             ],
-             "skills":[
-                "Typescript",
-                "angularjs"
-             ],
-             "affiliation":{
-              "name": "DMC",
-              "link": "https://dmc.international/"
+            "resumeTheme": {
+               "background": "#1c1c0c",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#eeeedd",
+               "secondaryFontColor": "#a0a870",
+               "thumbnail": "",
+               "figure": ""
             },
-             "keywords":[
-                "management portal",
-                "open-source"
-             ],
-             "startDate":"2022.06",
-             "endDate":"now"
-           }
+            "resume": {
+               "shortName": "MCP portal",
+               "category": [
+                  "front-end"
+               ],
+               "description": "an interface for organization administrators who manages resources through MCP",
+               "myContributions": [
+                  "lead developer",
+                  "deployment to GitHub Pages through Github Actions"
+               ],
+               "myCompetencies": [
+                  "Lead front-end architecture (AngularJS)",
+                  "CI/CD pipeline automation with GitHub Actions",
+                  "Open-source project stewardship",
+                  "User-facing admin interface design"
+               ],
+               "techStack": [
+                  "Typescript",
+                  "angularjs"
+               ],
+               "affiliation": {
+                  "name": "DMC",
+                  "link": "https://dmc.international/"
+               },
+               "keywords": [
+                  "management portal",
+                  "open-source"
+               ],
+               "startDate": "2022.06",
+               "endDate": "2025.04",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": ["MIR / MSR Resource Management UI", "PKI Key Pair & CSR Generation (Go WASM)", "PKCS#12 Keystore Management", "OIDC-based Authentication", "Multi-environment Configuration", "i18n (EN / KO)"]
+            }
          },
          "namespace": "resume",
          "actor": "Jinki Jung",
          "owner": "Jinki Jung",
          "state": "ACTIVE",
-            "act":{
-              "name": "MCP Management Portal"
+         "act": {
+            "name": "MCP Management Portal"
+         },
+         "goal": "MCP",
+         "output": [
+            {
+               "name": "GitHub repository",
+               "link": "https://github.com/maritimeconnectivity/ManagementPortal"
             },
-            "goal":"MCP",
-            "output":[
-              {
-                 "name": "GitHub repository",
-                 "link": "https://github.com/maritimeconnectivity/ManagementPortal"
-              },
-              {
-                 "name": "Web page",
-                 "link": "https://management.maritimeconnectivity.net/login"
-              }
-            ]
+            {
+               "name": "Web page",
+               "link": "https://management.maritimeconnectivity.net/login"
+            }
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#1c1c1c",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#e8e8e8",
+               "secondaryFontColor": "#909090",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "iil",
+               "category": [
+                  "research"
+               ],
+               "description": "a high-level script for representing works and its consequences, spinoff of previous project 'Tasc'",
+               "myContributions": [
+                  "founder of iil",
+                  "lead developer"
+               ],
+               "myCompetencies": [
+                  "Domain-specific language design",
+                  "Technical documentation and specification writing",
+                  "Research-driven product definition",
+                  "Independent project ownership"
+               ],
+               "techStack": [
+                  "markdown"
+               ],
+               "affiliation": {
+                  "name": "personal",
+                  "link": "https://jinkijung.github.io/"
+               },
+               "keywords": [
+                  "efficiency",
+                  "modeling"
+               ],
+               "startDate": "2022.01",
+               "endDate": "now",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": ["Condition-driven Task Activation", "Actor & Role Assignment", "Hierarchical Task Decomposition (goal / steps)", "Input / Output Data Binding", "State Machine (7-state lifecycle)", "Conditional Workflow Transition (checkout)", "Error Handling & Fallback Routing", "Namespace-scoped ULID Identification"]
+            }
          },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#1c1c1c",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#e8e8e8",
-            "secondaryFontColor": "#909090",
-            "thumbnail": "",
-            "figure": ""
-         },
-        "resume": {
-         "shortName": "iil",
-            "category":[
-                "research"
-             ],
-             "description":"a high-level script for representing works and its consequences, spinoff of previous project 'Tasc'",
-             "contributions":[
-                "founder of iil",
-                "lead developer"
-             ],
-             "competencies":[
-                "Domain-specific language design",
-                "Technical documentation and specification writing",
-                "Research-driven product definition",
-                "Independent project ownership"
-             ],
-             "skills":[
-               "markdown"
-            ],
-             "affiliation":{
-               "name": "personal",
-               "link": "https://jinkijung.github.io/"
-             },
-             "keywords":["efficiency", "modeling"],
-             "startDate":"2022.01",
-             "endDate":"now"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "ACTIVE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "ACTIVE",
+         "act": {
             "name": "iil"
          },
-          "goal":"iil",
-          "output":[
+         "goal": "iil",
+         "output": [
             {
                "name": "Web page",
                "link": "https://iil.readthedocs.org"
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#101828",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#d8e4f0",
-            "secondaryFontColor": "#7090b8",
-            "thumbnail": "",
-            "figure": ""
-         },
-        "resume": {
-         "shortName": "iil-todo",
-            "category":[
-                "front-end",
-                "back-end"
-             ],
-             "description":"a todo-list app based on iil",
-             "contributions":[
-                "lead developer"
-             ],
-             "competencies":[
-                "Full-stack application architecture",
-                "Agile solo feature delivery",
-                "Developer experience design",
-                "Bridging research concepts into product"
-             ],
-             "skills":[
-                "java",
-                "spring",
-                "React",
-                "Typescript",
-                "postgresql"
-             ],
-             "affiliation":{
-               "name": "personal",
-               "link": "https://jinkijung.github.io/"
-             },
-             "keywords":[
-                "efficiency",
-                "open-source"
-             ],
-             "startDate":"2022.01",
-             "endDate":"now"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "ACTIVE",
-          "act":{
-            "name": "iil-todo"
-          },
-          "goal":"iil",
-          "output":[
-            {
-               "name": "GitHub repository",
-               "link": "https://github.com/JinkiJung/iil-todo"
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#1e1018",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#eedde6",
+               "secondaryFontColor": "#b07898",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "Tasc",
+               "category": [
+                  "research",
+                  "real-time system"
+               ],
+               "description": "a Tasc-based Unity engine plugin facilitating easy and harmonized training scenario implementation, including three example applications",
+               "myContributions": [
+                  "lead developer"
+               ],
+               "myCompetencies": [
+                  "Unity engine plugin development",
+                  "Training scenario abstraction and modeling",
+                  "Rapid prototyping with C#",
+                  "Academic research to engineering translation"
+               ],
+               "techStack": [
+                  "Unity",
+                  "Csharp"
+               ],
+               "affiliation": {
+                  "name": "KRISO",
+                  "link": "https://kriso.re.kr/eng/"
+               },
+               "keywords": [
+                  "safety",
+                  "efficiency",
+                  "open-source"
+               ],
+               "startDate": "2019.08",
+               "endDate": "2020.04",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": []
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#1e1018",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#eedde6",
-            "secondaryFontColor": "#b07898",
-            "thumbnail": "",
-            "figure": ""
          },
-        "resume": {
-         "shortName": "Tasc",
-            "category":[
-                "research",
-                "real-time system"
-             ],
-             "description":"a Tasc-based Unity engine plugin facilitating easy and harmonized training scenario implementation, including three example applications",
-             "contributions":[
-                "lead developer"
-             ],
-             "competencies":[
-                "Unity engine plugin development",
-                "Training scenario abstraction and modeling",
-                "Rapid prototyping with C#",
-                "Academic research to engineering translation"
-             ],
-             "skills":[
-                "Unity",
-                "Csharp"
-             ],
-             "affiliation":{
-               "name": "KRISO",
-               "link": "https://kriso.re.kr/eng/"
-             },
-             "keywords":[
-                "safety",
-                "efficiency",
-                "open-source"
-             ],
-             "startDate":"2019.08",
-             "endDate":"2020.04"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "DONE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "DONE",
+         "act": {
             "name": "Virtual Training with Tasc"
-          },
-          "goal":"Virtuality for Safety",
-          "output":[
+         },
+         "goal": "Virtuality for Safety",
+         "output": [
             {
                "name": "Paper",
                "link": "https://ieeexplore.ieee.org/document/8943763"
@@ -467,61 +494,64 @@
                "name": "GitHub repository - example: stretching exercise",
                "link": "https://github.com/VirtualityForSafety/StretchingExercise3D"
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#141e2c",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#d5e2ee",
-            "secondaryFontColor": "#7090a8",
-            "thumbnail": "",
-            "figure": ""
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#141e2c",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#d5e2ee",
+               "secondaryFontColor": "#7090a8",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "MRR",
+               "category": [
+                  "front-end"
+               ],
+               "description": "The Maritime Resource Registry (MRR) is a universal directory for the maritime world, giving every object — whether a buoy, a document, or a digital service — a permanent, unique name so it can always be found and identified. It also manages the naming rules themselves, so the entire system stays organized and consistent as more organizations join. The MRR is implemented as a distributed, hierarchical REST API backed by a Neo4J graph database, storing versioned resource metadata keyed by MRN, while also managing ABNF-defined namespace syntax trees with authorization scoped to MRN namespaces.",
+               "myContributions": [
+                  "interface development"
+               ],
+               "myCompetencies": [
+                  "React component development",
+                  "UI library integration",
+                  "Discovery service UX design",
+                  "Maritime resource identifier (MRN) application"
+               ],
+               "techStack": [
+                  "Typescript",
+                  "React"
+               ],
+               "affiliation": {
+                  "name": "DMC",
+                  "link": "https://dmc.international/"
+               },
+               "keywords": [
+                  "digitalization",
+                  "discovery service",
+                  "open-source"
+               ],
+               "startDate": "2022.04",
+               "endDate": "2025.04",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": []
+            }
          },
-        "resume": {
-         "shortName": "MRR",
-            "category":[
-                "front-end"
-             ],
-             "description":"The Maritime Resource Registry (MRR) is a universal directory for the maritime world, giving every object — whether a buoy, a document, or a digital service — a permanent, unique name so it can always be found and identified. It also manages the naming rules themselves, so the entire system stays organized and consistent as more organizations join. The MRR is implemented as a distributed, hierarchical REST API backed by a Neo4J graph database, storing versioned resource metadata keyed by MRN, while also managing ABNF-defined namespace syntax trees with authorization scoped to MRN namespaces.",
-             "contributions":[
-                "interface development"
-             ],
-             "competencies":[
-                "React component development",
-                "UI library integration",
-                "Discovery service UX design",
-                "Maritime resource identifier (MRN) application"
-             ],
-             "skills":[
-                "Typescript",
-                "React"
-             ],
-             "affiliation":{
-               "name": "DMC",
-               "link": "https://dmc.international/"
-             },
-             "keywords":[
-                "digitalization",
-                "discovery service",
-                "open-source"
-             ],
-             "startDate":"2022.04",
-             "endDate":"now"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "ACTIVE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "ACTIVE",
+         "act": {
             "name": "Maritime Resource Registry"
-          },
-          "output":[
+         },
+         "output": [
             {
                "name": "GitHub repository",
                "link": "https://github.com/Digital-Maritime-Consultancy/mrr-portal"
@@ -530,63 +560,66 @@
                "name": "Web page",
                "link": "https://digital-maritime-consultancy.github.io/mrr-portal/"
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#141410",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#e8e8d8",
-            "secondaryFontColor": "#989878",
-            "thumbnail": "",
-            "figure": ""
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#141410",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#e8e8d8",
+               "secondaryFontColor": "#989878",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "VoTT-MOAD",
+               "category": [
+                  "front-end",
+                  "native application"
+               ],
+               "description": "super-pixel based annotation support in VoTT",
+               "myContributions": [
+                  "lead developer"
+               ],
+               "myCompetencies": [
+                  "Electron desktop application development",
+                  "Annotation workflow UX design",
+                  "ML training data pipeline tooling",
+                  "Open-source fork management"
+               ],
+               "techStack": [
+                  "Typescript",
+                  "React",
+                  "Electron"
+               ],
+               "affiliation": {
+                  "name": "DMC",
+                  "link": "https://dmc.international/"
+               },
+               "keywords": [
+                  "data collection for ML",
+                  "annotation tool"
+               ],
+               "startDate": "2020.10",
+               "endDate": "2021.11",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": []
+            }
          },
-        "resume" : {
-         "shortName": "VoTT-MOAD",
-            "category":[
-                "front-end",
-                "native application"
-             ],
-             "description":"super-pixel based annotation support in VoTT",
-             "contributions":[
-                "lead developer"
-             ],
-             "competencies":[
-                "Electron desktop application development",
-                "Annotation workflow UX design",
-                "ML training data pipeline tooling",
-                "Open-source fork management"
-             ],
-             "skills":[
-                "Typescript",
-                "React",
-                "Electron"
-             ],
-             "affiliation":{
-               "name": "DMC",
-               "link": "https://dmc.international/"
-             },
-             "keywords":[
-                "data collection for ML",
-                "annotation tool"
-             ],
-             "startDate":"2020.10",
-             "endDate":"2021.11"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "DONE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "DONE",
+         "act": {
             "name": "Annotation tool development for MOAD project"
-          },
-          "goal":"MOAD",
-          "output":[
+         },
+         "goal": "MOAD",
+         "output": [
             {
                "name": "GitHub repository",
                "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-MOAD"
@@ -595,66 +628,69 @@
                "name": "Public dataset generated by the tool",
                "link": "https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=116&topMenu=100&aihubDataSe=ty&dataSetSn=175"
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#0e1c18",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#d5ece6",
-            "secondaryFontColor": "#60a890",
-            "thumbnail": "",
-            "figure": ""
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#0e1c18",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#d5ece6",
+               "secondaryFontColor": "#60a890",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "VoTT-dot",
+               "category": [
+                  "front-end",
+                  "back-end"
+               ],
+               "description": "efficent point-based semi-automatic annotation tool, powered by ML server",
+               "myContributions": [
+                  "lead front-end developer",
+                  "lead back-end developer"
+               ],
+               "myCompetencies": [
+                  "Semi-automatic ML annotation system design",
+                  "Backend and frontend integration",
+                  "Performance optimization for real-time interaction",
+                  "ML-assisted workflow engineering"
+               ],
+               "techStack": [
+                  "Typescript",
+                  "React",
+                  "Electron",
+                  "java",
+                  "Spring"
+               ],
+               "affiliation": {
+                  "name": "DMC",
+                  "link": "https://dmc.international/"
+               },
+               "keywords": [
+                  "data collection for ML",
+                  "annotation tool"
+               ],
+               "startDate": "2021.09",
+               "endDate": "2025.04",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": []
+            }
          },
-        "resume": {
-         "shortName": "VoTT-dot",
-            "category":[
-                "front-end",
-                "back-end"
-             ],
-             "description":"efficent point-based semi-automatic annotation tool, powered by ML server",
-             "contributions":[
-                "lead front-end developer",
-                "lead back-end developer"
-             ],
-             "competencies":[
-                "Semi-automatic ML annotation system design",
-                "Backend and frontend integration",
-                "Performance optimization for real-time interaction",
-                "ML-assisted workflow engineering"
-             ],
-             "skills":[
-                "Typescript",
-                "React",
-                "Electron",
-                "java",
-                "Spring"
-             ],
-             "affiliation":{
-               "name": "DMC",
-               "link": "https://dmc.international/"
-             },
-             "keywords":[
-                "data collection for ML",
-                "annotation tool"
-             ],
-             "startDate":"2021.09",
-             "endDate":"now"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "ACTIVE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "ACTIVE",
+         "act": {
             "name": "Semi-automatic annotation service"
-          },
-          "goal":"MAIDAS",
-          "output":[
+         },
+         "goal": "MAIDAS",
+         "output": [
             {
                "name": "GitHub repository - front-end",
                "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-dot"
@@ -663,65 +699,68 @@
                "name": "GitHub repository - back-end",
                "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-dot-server"
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#1a1008",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#ede0d0",
-            "secondaryFontColor": "#a87850",
-            "thumbnail": "",
-            "figure": ""
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#1a1008",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#ede0d0",
+               "secondaryFontColor": "#a87850",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "AR for safety",
+               "category": [
+                  "research",
+                  "AR",
+                  "VR"
+               ],
+               "description": "visual safety alarm system for the AR user and its analysis through Deep learning and simulated VR environment",
+               "myContributions": [
+                  "lead researcher",
+                  "lead Unity developer"
+               ],
+               "myCompetencies": [
+                  "VR/AR simulation development",
+                  "Deep learning model integration",
+                  "Safety system research and prototyping",
+                  "Cross-domain research (HCI + ML + Safety)"
+               ],
+               "techStack": [
+                  "Unity",
+                  "csharp"
+               ],
+               "affiliation": {
+                  "name": "KRISO",
+                  "link": "https://kriso.re.kr/eng/"
+               },
+               "keywords": [
+                  "VR",
+                  "AR",
+                  "deep learning"
+               ],
+               "startDate": "2018.03",
+               "endDate": "2018.10",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": []
+            }
          },
-        "resume": {
-         "shortName": "AR for safety",
-            "category":[
-                "research",
-                "AR",
-                "VR"
-             ],
-             "description":"visual safety alarm system for the AR user and its analysis through Deep learning and simulated VR environment",
-             "contributions":[
-                "lead researcher",
-                "lead Unity developer"
-             ],
-             "competencies":[
-                "VR/AR simulation development",
-                "Deep learning model integration",
-                "Safety system research and prototyping",
-                "Cross-domain research (HCI + ML + Safety)"
-             ],
-             "skills":[
-                "Unity",
-                "csharp"
-             ],
-             "affiliation":{
-               "name": "KRISO",
-               "link": "https://kriso.re.kr/eng/"
-             },
-             "keywords":[
-                "VR",
-                "AR",
-                "deep learning"
-             ],
-             "startDate":"2018.03",
-             "endDate":"2018.10"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "DONE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "DONE",
+         "act": {
             "name": "VR/AR for safety"
-          },
-          "goal":"VirtualityForSafety",
-          "output":[
+         },
+         "goal": "VirtualityForSafety",
+         "output": [
             {
                "name": "Paper",
                "link": "https://ieeexplore.ieee.org/document/8613752"
@@ -730,59 +769,64 @@
                "name": "GitHub repository",
                "link": "https://github.com/VirtualityForSafety/RoadTrafficSimulation3D"
             }
-          ]
-       },
-       {
-       "id": "",
-       "about": {
-         "resumeTheme":{
-            "background": "#120a20",
-            "fontFace": "",
-            "titleFontColor": "white",
-            "titleFontShadowColor": "transparent",
-            "contentFontColor": "#e0d5f0",
-            "secondaryFontColor": "#9070c8",
-            "thumbnail": "",
-            "figure": ""
+         ]
+      },
+      {
+         "id": "",
+         "about": {
+            "resumeTheme": {
+               "background": "#120a20",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#e0d5f0",
+               "secondaryFontColor": "#9070c8",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "MLVT",
+               "category": [
+                  "Augmented Reality"
+               ],
+               "description": "real-time 6 DOF feature tracking for Augmented Reality",
+               "myContributions": [
+                  "AR engine integration",
+                  "performance optimization"
+               ],
+               "myCompetencies": [
+                  "Real-time 6DOF tracking implementation (C++)",
+                  "Computer vision engineering with OpenCV",
+                  "Performance optimization for mobile AR",
+                  "Academic research to production code"
+               ],
+               "techStack": [
+                  "cplusplus",
+                  "OpenCV"
+               ],
+               "affiliation": {
+                  "name": "KAIST",
+                  "link": "https://www.kaist.ac.kr/en/"
+               },
+               "keywords": [
+                  "AR",
+                  "real-time system"
+               ],
+               "startDate": "2010.09",
+               "endDate": "2014.12",
+               "team": "Team of 4",
+"myRole": "PM & Software Developer",
+               "features": []
+            }
          },
-        "resume": {
-         "shortName": "MLVT",
-            "category":["Augmented Reality"],
-         "description":"real-time 6 DOF feature tracking for Augmented Reality",
-         "contributions":[
-            "AR engine integration",
-            "performance optimization"
-         ],
-         "competencies":[
-            "Real-time 6DOF tracking implementation (C++)",
-            "Computer vision engineering with OpenCV",
-            "Performance optimization for mobile AR",
-            "Academic research to production code"
-         ],
-         "skills":[
-            "cplusplus",
-            "OpenCV"
-         ],
-         "affiliation":{
-            "name": "KAIST",
-            "link": "https://www.kaist.ac.kr/en/"
-          },
-         "keywords":[
-            "AR",
-            "real-time system"
-         ],
-         "startDate":"2010.09",
-             "endDate":"2014.12"
-        }
-       },
-       "namespace": "resume",
-       "actor": "Jinki Jung",
-       "owner": "Jinki Jung",
-       "state": "DONE",
-          "act":{
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "DONE",
+         "act": {
             "name": "Efficient mobile AR platform with real-time tracking"
-          },
-          "output":[
+         },
+         "output": [
             {
                "name": "Paper - Efficient mobile AR technology using scalable recognition and tracking based on server-client model",
                "link": "https://www.sciencedirect.com/science/article/abs/pii/S0097849312000052"
@@ -791,7 +835,7 @@
                "name": "Paper - Smartphone as an augmented reality authoring tool via multi-touch based 3D interaction method",
                "link": "https://dl.acm.org/doi/abs/10.1145/2407516.2407520"
             }
-          ]
-       }
-    ]
- }
+         ]
+      }
+   ]
+}

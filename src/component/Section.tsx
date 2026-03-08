@@ -91,63 +91,67 @@ export const Section = ({ item }: SectionProp) => {
 
                 <div className="section-body">
                     {/* My Contributions */}
-                    <div className="section-zone">
-                        <Card style={cardStyle} className="section-card">
-                            <CardHeader className="section-card-header">
-                                <CardTitle style={{ color: contentColor }} className="section-card-title">
-                                    My Contributions
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <ul className="section-list">
-                                    {resume?.contributions?.map((c: string) => (
-                                        <li key={c} style={{ color: contentColor }}>
-                                            {c}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </CardContent>
-                        </Card>
+                    <div className="section-zone section-zone--left">
+                        <div className="section-left-content">
+                            <Card style={cardStyle} className="section-card">
+                                <CardHeader className="section-card-header">
+                                    <CardTitle style={{ color: contentColor }} className="section-card-title">
+                                        My Contributions
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <ul className="section-list">
+                                        {resume?.myContributions?.map((c: string) => (
+                                            <li key={c} style={{ color: contentColor }}>
+                                                {c}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </CardContent>
+                            </Card>
+                        </div>
                     </div>
 
                     {/* Competencies Demonstrated */}
                     <div className="section-zone section-zone--right">
-                        <Card style={cardStyle} className="section-card">
-                            <CardHeader className="section-card-header">
-                                <CardTitle style={{ color: contentColor }} className="section-card-title">
-                                    Competencies Demonstrated
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <ul className="section-list">
-                                    {resume?.competencies?.map((c: string) => (
-                                        <li key={c} style={{ color: contentColor }}>
-                                            {c}
-                                        </li>
-                                    ))}
-                                </ul>
-                                {resume?.skills && resume.skills.length > 0 && (
-                                    <div className="section-skills">
-                                        <p className="section-skills-label" style={{ color: secondaryColor }}>
-                                            Tech Stack
-                                        </p>
-                                        <div className="section-skills-icons">
-                                            {resume.skills.map((iconName: string) => (
-                                                <div key={iconName} className="section-skill-item">
-                                                    <img
-                                                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`}
-                                                        height={32}
-                                                        alt={iconName}
-                                                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-                                                    />
-                                                    <span style={{ color: secondaryColor }}>{iconName}</span>
-                                                </div>
-                                            ))}
+                        <div className="section-right-content">
+                            <Card style={cardStyle} className="section-card">
+                                <CardHeader className="section-card-header">
+                                    <CardTitle style={{ color: contentColor }} className="section-card-title">
+                                        Competencies Demonstrated
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <ul className="section-list">
+                                        {resume?.myCompetencies?.map((c: string) => (
+                                            <li key={c} style={{ color: contentColor }}>
+                                                {c}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    {resume?.techStack && resume.techStack.length > 0 && (
+                                        <div className="section-skills">
+                                            <p className="section-skills-label" style={{ color: secondaryColor }}>
+                                                Tech Stack
+                                            </p>
+                                            <div className="section-skills-icons">
+                                                {resume.techStack.map((iconName: string) => (
+                                                    <div key={iconName} className="section-skill-item">
+                                                        <img
+                                                            src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${iconName.toLowerCase()}/${iconName.toLowerCase()}-original.svg`}
+                                                            height={32}
+                                                            alt={iconName}
+                                                            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                                                        />
+                                                        <span style={{ color: secondaryColor }}>{iconName}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
-                            </CardContent>
-                        </Card>
+                                    )}
+                                </CardContent>
+                            </Card>
+                        </div>
                     </div>
                 </div>
             </div>
