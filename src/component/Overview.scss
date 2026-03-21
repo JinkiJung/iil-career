@@ -34,6 +34,24 @@
     line-height: 0.95;
     text-transform: uppercase;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.25em;
+}
+
+.overview-title-mask {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.overview-title-word {
+    display: inline-block;
+    transform: translateY(110%);
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.overview-title-row--revealed .overview-title-word {
+    transform: translateY(0);
 }
 
 .section-sticky .overview-title {

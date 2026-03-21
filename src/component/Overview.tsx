@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Badge } from '@/components/ui/badge';
 import './Overview.scss';
 
@@ -12,24 +13,54 @@ export const Overview = ({ item }: OverviewProps) => {
     const secondaryColor = theme.secondaryFontColor;
     const titleColor = theme.titleFontColor;
     const shadowColor = theme.titleFontShadowColor;
+    const titleRowRef = useRef<HTMLDivElement>(null);
 
     const allTags = [
         ...(resume?.category ?? []),
         ...(resume?.keywords ?? []),
     ];
 
+    const titleWords = (item.act.name as string).split(' ');
+
+    useEffect(() => {
+        const row = titleRowRef.current;
+        if (!row) return;
+        const container = row.closest('.careerContainer') as HTMLElement;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    row.classList.add('overview-title-row--revealed');
+                } else {
+                    row.classList.remove('overview-title-row--revealed');
+                }
+            },
+            { root: container, threshold: 0.1 }
+        );
+
+        observer.observe(row);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="overview-container">
             {/* Title area — starts centered (hero), transitions to top (compact) */}
-            <div className="overview-title-row">
-                <h1
-                    className="overview-title"
-                    style={{
-                        color: titleColor,
-                        textShadow: `2px 2px 0 ${shadowColor}`,
-                    }}
-                >
-                    {item.act.name}
+            <div className="overview-title-row" ref={titleRowRef}>
+                <h1 className="overview-title" aria-label={item.act.name}>
+                    {titleWords.map((word, i) => (
+                        <span key={i} className="overview-title-mask">
+                            <span
+                                className="overview-title-word"
+                                style={{
+                                    color: titleColor,
+                                    textShadow: `2px 2px 0 ${shadowColor}`,
+                                    transitionDelay: `${i * 0.08}s`,
+                                }}
+                            >
+                                {word}
+                            </span>
+                        </span>
+                    ))}
                 </h1>
                 <p className="overview-subtitle" style={{ color: secondaryColor }}>
                     {resume?.affiliation?.name} &middot; {resume?.startDate} — {resume?.endDate}
