@@ -1,50 +1,69 @@
-import { Container, Row } from "react-bootstrap";
+import { useEffect, useRef } from 'react';
+import anime from 'animejs';
 import './Header.scss';
 
-const boxStyle = {
-    backgroundColor: '#2F4858',
-    borderRadius: '25px',
-    minWidth: '400px',
-    minHeight: '400px',
-    display: 'flex',
-    flexDirection: 'column' as const,
-    justifyContent: 'center',
-    alignItems: 'center',
-    boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.2)'
-  };
-  
-  const titleStyle = {
-    color: '#F6AE2D',
-    fontWeight: 'bold',
-    fontSize: '36px',
-    marginBottom: '30px',
-  };
-  
-  const descriptionStyle = {
-    textAlign: 'center' as const,
-    paddingTop: '15px',
-    fontSize: '24px',
-    color: '#DDDDDD',
-  };
-  
-export const Header = () => {
-    return <Row className="w-100 d-flex careerItem p-0 m-0">
-    <Container style={{ backgroundColor: '#33658A', display: 'flex', flexDirection: 'column', height: '100vh' }}>
-        <Row style={{ flexGrow: 1 }}>
-            <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-                <div style={boxStyle}>
-                    <div style={titleStyle}>Jinki Jung</div>
-                    <img src={import.meta.env.BASE_URL + "jinki_profile.png"} alt="profile pic" height="150px"></img>
-                    <div style={descriptionStyle}>developer career page</div>
-                </div>
-            </Container>
-        </Row>
-        <Row style={{ flexGrow: 0 }}>
-                <div className="arrow-container">
-                    <p className="text">Scroll down for more</p>
-                    <div className="arrow-down"></div>
-                </div>
-        </Row>
-        </Container>
-    </Row>;
+interface HeaderLink {
+    label: string;
+    url: string;
 }
+
+interface HeaderProps {
+    frontPage: {
+        subtitle: string;
+        name: string;
+        links: HeaderLink[];
+    };
+}
+
+export const Header = ({ frontPage }: HeaderProps) => {
+    const subtitleRef = useRef<HTMLParagraphElement>(null);
+    const nameRef = useRef<HTMLHeadingElement>(null);
+
+    useEffect(() => {
+        const subtitleEl = subtitleRef.current;
+        const nameEl = nameRef.current;
+        if (!subtitleEl || !nameEl) return;
+
+        subtitleEl.innerHTML = subtitleEl.textContent!.replace(/\S/g, "<span class='header-subtitle-letter'>$&</span>");
+        nameEl.innerHTML = nameEl.textContent!.replace(/\S/g, "<span class='header-name-letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.header-subtitle-letter',
+                opacity: [0, 1],
+                easing: 'easeInOutQuad',
+                duration: 100,
+                delay: (_el: HTMLElement, i: number) => 60 * (i + 1),
+            })
+            .add({
+                targets: '.header-name-letter',
+                opacity: [0, 1],
+                easing: 'easeInOutQuad',
+                duration: 2000,
+                delay: (_el: HTMLElement, i: number) => 120 * (i + 1),
+            }, 0);
+    }, []);
+
+    return (
+        <div className="header">
+            <nav className="header-links">
+                {frontPage.links.map((link) => (
+                    <a
+                        key={link.label}
+                        href={link.url}
+                        className="header-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {link.label}
+                    </a>
+                ))}
+            </nav>
+
+            <div className="header-hero">
+                <p ref={subtitleRef} className="header-subtitle">{frontPage.subtitle}</p>
+                <h1 ref={nameRef} className="header-name">{frontPage.name}</h1>
+            </div>
+        </div>
+    );
+};

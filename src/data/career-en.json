@@ -1,16 +1,27 @@
 {
    "frontPage": {
-      "title": "Jinki Jung's career"
+      "title": "Jinki Jung's career",
+      "subtitle": "A portfolio of",
+      "name": "Jinki Jung",
+      "links": [
+         { "label": "Download CV", "url": "#" },
+         { "label": "Linked in", "url": "#" },
+         { "label": "Personal webpage", "url": "#" }
+      ]
    },
    "career": [
       {
-         "id": "",
+         "id": "f8e0f6de-2291-40bc-b03d-63380f75252c",
          "help": {
             "click": "https://aivenautics.com"
          },
          "about": {
             "resumeTheme": {
                "background": "#0f1e30",
+               "gradientType": "radial",
+               "gradientAngle": "ellipse at 50% 0%",
+               "gradientStops": [["#1a3a5c", "0%"], ["#0f1e30", "50%"], ["#060e1a", "100%"]],
+               "gradientOverlay": "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.3) 100%)",
                "fontFace": "",
                "titleFontColor": "white",
                "titleFontShadowColor": "transparent",
@@ -49,8 +60,18 @@
                "startDate": "2025.05",
                "endDate": "now",
                "team": "Team of 7",
-               "myRole":"PM & Software Developer",
-               "features": ["Location-Based Messaging", "Real-Time Hazard Sharing", "Subscription-Based Safety Service Aggregation", "MCP-Powered Secure Connectivity", "MRN-Based Trusted Identity", "e-Navigation Standards Compliance"]
+               "myRole": "PM & Software Developer",
+               "features": [
+                  "Location-Based Messaging",
+                  "Real-Time Hazard Sharing",
+                  "Subscription-Based Safety Service Aggregation",
+                  "MCP-Powered Secure Connectivity",
+                  "MRN-Based Trusted Identity",
+                  "e-Navigation Standards Compliance"
+               ],
+               "story": "Driven by the ambition to build the first commercial product powered by the Maritime Connectivity Platform, I took full ownership of the project's branding, concept design, and overall project management — while also contributing hands-on as a developer to bring the vision to life.",
+               "why": "I wanted to build the first commercial product powered by the Maritime Connectivity Platform, proving that MCP could underpin a real-world, production-grade application.",
+               "contributionOverview": "I led the project's branding, concept design, and overall project management, while also contributing directly as a developer across key parts of the product."
             }
          },
          "namespace": "resume",
@@ -73,13 +94,17 @@
          ]
       },
       {
-         "id": "",
+         "id": "fa4653e4-7160-4795-870d-496a16b18e96",
          "help": {
             "click": "https://dmc.international/"
          },
          "about": {
             "resumeTheme": {
                "background": "#1a2744",
+               "gradientType": "linear",
+               "gradientAngle": "135deg",
+               "gradientStops": [["#1e3050", "0%"], ["#1a2744", "40%"], ["#0e1628", "100%"]],
+               "gradientOverlay": "radial-gradient(ellipse at 70% 30%, rgba(40,70,120,0.25) 0%, transparent 60%)",
                "fontFace": "",
                "titleFontColor": "white",
                "titleFontShadowColor": "transparent",
@@ -89,26 +114,43 @@
                "figure": ""
             },
             "resume": {
-               "shortName": "MIR",
+               "shortName": "MCP",
                "category": [
-                  "back-end"
+                  "back-end",
+                  "front-end"
                ],
-               "description": "The MIR is the digital passport system for the maritime world — it gives every ship, person, organization, and device a unique, verified identity so they can be trusted when communicating or exchanging data at sea.",
+               "description": "Contributed across all core components of the Maritime Connectivity Platform (MCP) — building distributed digital identity infrastructure (MIR), a standards-based service discovery system (MSR), and a web-based administration portal for managing MCP resources.",
                "myContributions": [
                   "distributed MIR development",
                   "MMS integration as entity type",
-                  "deployment of MIR"
+                  "deployment of MIR",
+                  "front and search page development",
+                  "testing and maintenance",
+                  "lead developer",
+                  "deployment to GitHub Pages through Github Actions"
                ],
                "myCompetencies": [
                   "Distributed systems architecture",
                   "PKI & OIDC security engineering",
                   "Containerized deployment with Docker",
-                  "Open-source project contribution"
+                  "Open-source project contribution",
+                  "Full-stack web development",
+                  "REST API design and integration",
+                  "Relational database management",
+                  "Software quality assurance",
+                  "Lead front-end architecture (AngularJS)",
+                  "CI/CD pipeline automation with GitHub Actions",
+                  "Open-source project stewardship",
+                  "User-facing admin interface design"
                ],
                "techStack": [
                   "java",
                   "spring",
-                  "docker"
+                  "docker",
+                  "javascript",
+                  "postgresql",
+                  "Typescript",
+                  "angularjs"
                ],
                "affiliation": {
                   "name": "DMC",
@@ -118,12 +160,33 @@
                   "cyber security",
                   "authentication",
                   "digitalization",
-                  "open-source"
+                  "open-source",
+                  "service discovery",
+                  "management portal"
                ],
                "startDate": "2019.04",
                "endDate": "2025.04",
-               "team": "MCC IDSEC WG",
-               "features": ["PKI / Certificate Authority", "OAuth 2.0 / OpenID Connect", "Identity & Access Management", "Distributed Trust System"]
+               "team": "MCC IDSEC WG · Team of 4",
+               "features": [
+                  "PKI / Certificate Authority",
+                  "OAuth 2.0 / OpenID Connect",
+                  "Identity & Access Management",
+                  "Distributed Trust System",
+                  "Service Discovery",
+                  "Metadata Management",
+                  "REST API",
+                  "Geospatial Search & Filtering",
+                  "SECOM Interface",
+                  "MIR / MSR Resource Management UI",
+                  "PKI Key Pair & CSR Generation (Go WASM)",
+                  "PKCS#12 Keystore Management",
+                  "OIDC-based Authentication",
+                  "Multi-environment Configuration",
+                  "i18n (EN / KO)"
+               ],
+               "story": "Motivated by the desire to collaborate with talented peers and create a meaningful open-source impact in the maritime domain — and to contribute to safety in a new way — I led the development of the MCP Management Portal to broaden MCP accessibility, while also contributing to the distributed MIR architecture and MSR implementation.",
+               "why": "I wanted to experience the kind of collaboration where talented peers work together through open source to create a positive impact in a field — and I saw it as a new way to contribute to safety beyond conventional approaches.",
+               "contributionOverview": "I led the development of the MCP Management Portal to lower the barrier to MCP adoption, while also contributing to the distributed MIR architecture and the MSR implementation."
             }
          },
          "namespace": "resume",
@@ -131,7 +194,7 @@
          "owner": "Jinki Jung",
          "state": "ACTIVE",
          "act": {
-            "name": "Maritime Identity Registry"
+            "name": "Maritime Connectivity Platform"
          },
          "goal": "MCP",
          "output": [
@@ -142,80 +205,17 @@
          ]
       },
       {
-         "id": "",
-         "about": {
-            "resumeTheme": {
-               "background": "#0d2030",
-               "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "transparent",
-               "contentFontColor": "#ddeef5",
-               "secondaryFontColor": "#6fa8c0",
-               "thumbnail": "",
-               "figure": ""
-            },
-            "resume": {
-               "shortName": "MSR",
-               "category": [
-                  "front-end",
-                  "back-end"
-               ],
-               "description": "The MSR is a searchable directory of maritime digital services — it doesn't deliver the services itself, but tells you what services exist, what information they provide, and how to connect to them. The MSR stores service specifications conforming to IALA Guideline G1128 and manages the lifecycle of provisioned service instances, enabling discovery via faceted search across keywords, organizations, and geolocation.",
-               "myContributions": [
-                  "front and search page development",
-                  "testing and maintenance"
-               ],
-               "myCompetencies": [
-                  "Full-stack web development",
-                  "REST API design and integration",
-                  "Relational database management",
-                  "Software quality assurance"
-               ],
-               "techStack": [
-                  "java",
-                  "spring",
-                  "javascript",
-                  "postgresql"
-               ],
-               "affiliation": {
-                  "name": "DMC",
-                  "link": "https://dmc.international/"
-               },
-               "keywords": [
-                  "service discovery",
-                  "digitalization",
-                  "open-source"
-               ],
-               "startDate": "2021.04",
-               "endDate": "2025.04",
-               "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": ["Service Discovery", "Metadata Management", "REST API", "Geospatial Search & Filtering", "SECOM Interface"]
-            }
-         },
-         "namespace": "resume",
-         "actor": "Jinki Jung",
-         "owner": "Jinki Jung",
-         "state": "ACTIVE",
-         "act": {
-            "name": "Maritime Service Registry"
-         },
-         "goal": "MCP",
-         "output": [
-            {
-               "name": "GitHub repository",
-               "link": "https://github.com/maritimeconnectivity/ServiceRegistry"
-            }
-         ]
-      },
-      {
-         "id": "",
+         "id": "e76a0425-9cd4-4709-8b8a-20ecc04c70eb",
          "help": {
             "click": "https://dmc.international/"
          },
          "about": {
             "resumeTheme": {
                "background": "#0e2420",
+               "gradientType": "radial",
+               "gradientAngle": "ellipse at 30% 70%",
+               "gradientStops": [["#163832", "0%"], ["#0e2420", "45%"], ["#060f0d", "100%"]],
+               "gradientOverlay": "linear-gradient(160deg, rgba(20,60,50,0.3) 0%, transparent 50%)",
                "fontFace": "",
                "titleFontColor": "white",
                "titleFontShadowColor": "transparent",
@@ -260,8 +260,16 @@
                "startDate": "2021.08",
                "endDate": "2025.04",
                "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": ["Carrier-Agnostic Messaging", "Gateway Integration", "Address Routing by MRN", "Multi-link Communication (Cellular / VDES)"]
+               "myRole": "PM & Software Developer",
+               "features": [
+                  "Carrier-Agnostic Messaging",
+                  "Gateway Integration",
+                  "Address Routing by MRN",
+                  "Multi-link Communication (Cellular / VDES)"
+               ],
+               "story": "Eager to participate in the full lifecycle of a technical standard — from writing the specification to building a working implementation — I joined the MCC MMS Working Group to contribute to the standard documentation and directly implemented the MMS Agent.",
+               "why": "I wanted to participate in the full lifecycle of a technical standard — from authoring the specification all the way through to a working implementation.",
+               "contributionOverview": "Through active participation in the MCC MMS Working Group, I contributed to writing the standard specification and directly implemented the MMS Agent."
             }
          },
          "namespace": "resume",
@@ -288,77 +296,14 @@
          ]
       },
       {
-         "id": "",
-         "about": {
-            "resumeTheme": {
-               "background": "#1c1c0c",
-               "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "transparent",
-               "contentFontColor": "#eeeedd",
-               "secondaryFontColor": "#a0a870",
-               "thumbnail": "",
-               "figure": ""
-            },
-            "resume": {
-               "shortName": "MCP portal",
-               "category": [
-                  "front-end"
-               ],
-               "description": "an interface for organization administrators who manages resources through MCP",
-               "myContributions": [
-                  "lead developer",
-                  "deployment to GitHub Pages through Github Actions"
-               ],
-               "myCompetencies": [
-                  "Lead front-end architecture (AngularJS)",
-                  "CI/CD pipeline automation with GitHub Actions",
-                  "Open-source project stewardship",
-                  "User-facing admin interface design"
-               ],
-               "techStack": [
-                  "Typescript",
-                  "angularjs"
-               ],
-               "affiliation": {
-                  "name": "DMC",
-                  "link": "https://dmc.international/"
-               },
-               "keywords": [
-                  "management portal",
-                  "open-source"
-               ],
-               "startDate": "2022.06",
-               "endDate": "2025.04",
-               "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": ["MIR / MSR Resource Management UI", "PKI Key Pair & CSR Generation (Go WASM)", "PKCS#12 Keystore Management", "OIDC-based Authentication", "Multi-environment Configuration", "i18n (EN / KO)"]
-            }
-         },
-         "namespace": "resume",
-         "actor": "Jinki Jung",
-         "owner": "Jinki Jung",
-         "state": "ACTIVE",
-         "act": {
-            "name": "MCP Management Portal"
-         },
-         "goal": "MCP",
-         "output": [
-            {
-               "name": "GitHub repository",
-               "link": "https://github.com/maritimeconnectivity/ManagementPortal"
-            },
-            {
-               "name": "Web page",
-               "link": "https://management.maritimeconnectivity.net/login"
-            }
-         ]
-      },
-      {
-         "id": "",
+         "id": "b5c232d6-92d9-4510-aa0d-da9a8dd6f146",
          "about": {
             "resumeTheme": {
                "background": "#1c1c1c",
+               "gradientType": "radial",
+               "gradientAngle": "ellipse at 50% 50%",
+               "gradientStops": [["#2a2a2a", "0%"], ["#1c1c1c", "50%"], ["#111111", "100%"]],
+               "gradientOverlay": "conic-gradient(from 45deg at 50% 50%, rgba(60,60,60,0.08) 0deg, transparent 90deg, rgba(60,60,60,0.05) 180deg, transparent 270deg)",
                "fontFace": "",
                "titleFontColor": "white",
                "titleFontShadowColor": "transparent",
@@ -397,8 +342,20 @@
                "startDate": "2022.01",
                "endDate": "now",
                "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": ["Condition-driven Task Activation", "Actor & Role Assignment", "Hierarchical Task Decomposition (goal / steps)", "Input / Output Data Binding", "State Machine (7-state lifecycle)", "Conditional Workflow Transition (checkout)", "Error Handling & Fallback Routing", "Namespace-scoped ULID Identification"]
+               "myRole": "PM & Software Developer",
+               "features": [
+                  "Condition-driven Task Activation",
+                  "Actor & Role Assignment",
+                  "Hierarchical Task Decomposition (goal / steps)",
+                  "Input / Output Data Binding",
+                  "State Machine (7-state lifecycle)",
+                  "Conditional Workflow Transition (checkout)",
+                  "Error Handling & Fallback Routing",
+                  "Namespace-scoped ULID Identification"
+               ],
+               "story": "Motivated by a desire to define a formal specification for knowledge work itself, I established the core conceptual framework and am currently developing both a book and a working implementation grounded in it.",
+               "why": "I wanted to define a formal specification for work itself — a structured framework that could bring clarity and consistency to how knowledge work is conceptualized and executed.",
+               "contributionOverview": "I established the core conceptual framework and am currently developing both a book and a working implementation based on it."
             }
          },
          "namespace": "resume",
@@ -417,10 +374,14 @@
          ]
       },
       {
-         "id": "",
+         "id": "fab8bd42-5a9e-47fb-b5c8-328ed851c2ec",
          "about": {
             "resumeTheme": {
                "background": "#1e1018",
+               "gradientType": "radial",
+               "gradientAngle": "ellipse at 60% 20%",
+               "gradientStops": [["#2e1828", "0%"], ["#1e1018", "50%"], ["#0d060c", "100%"]],
+               "gradientOverlay": "linear-gradient(200deg, rgba(80,30,60,0.2) 0%, transparent 50%)",
                "fontFace": "",
                "titleFontColor": "white",
                "titleFontShadowColor": "transparent",
@@ -461,8 +422,11 @@
                "startDate": "2019.08",
                "endDate": "2020.04",
                "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": []
+               "myRole": "PM & Software Developer",
+               "features": [],
+               "story": "Frustrated by how even minor changes to training scripts required extensive rework across the entire program, I conceived a standardized scripting system with a dedicated engine to interpret it — as project lead, I defined the Tasc script format specification, built the engine, produced three example implementations, and released the full source code as open source, publishing the work as a research paper.",
+               "why": "Training programs required extensive rework whenever scripts changed even slightly, so I wanted to solve this by creating a standardized script format and a dedicated engine to interpret it — enabling easily maintainable VR-based training.",
+               "contributionOverview": "As project lead, I created the concept, defined the Tasc standardized script format specification, built the Tasc engine, produced three example implementations, released all source code as open source, and published the work as a research paper."
             }
          },
          "namespace": "resume",
@@ -497,216 +461,14 @@
          ]
       },
       {
-         "id": "",
-         "about": {
-            "resumeTheme": {
-               "background": "#141e2c",
-               "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "transparent",
-               "contentFontColor": "#d5e2ee",
-               "secondaryFontColor": "#7090a8",
-               "thumbnail": "",
-               "figure": ""
-            },
-            "resume": {
-               "shortName": "MRR",
-               "category": [
-                  "front-end"
-               ],
-               "description": "The Maritime Resource Registry (MRR) is a universal directory for the maritime world, giving every object — whether a buoy, a document, or a digital service — a permanent, unique name so it can always be found and identified. It also manages the naming rules themselves, so the entire system stays organized and consistent as more organizations join. The MRR is implemented as a distributed, hierarchical REST API backed by a Neo4J graph database, storing versioned resource metadata keyed by MRN, while also managing ABNF-defined namespace syntax trees with authorization scoped to MRN namespaces.",
-               "myContributions": [
-                  "interface development"
-               ],
-               "myCompetencies": [
-                  "React component development",
-                  "UI library integration",
-                  "Discovery service UX design",
-                  "Maritime resource identifier (MRN) application"
-               ],
-               "techStack": [
-                  "Typescript",
-                  "React"
-               ],
-               "affiliation": {
-                  "name": "DMC",
-                  "link": "https://dmc.international/"
-               },
-               "keywords": [
-                  "digitalization",
-                  "discovery service",
-                  "open-source"
-               ],
-               "startDate": "2022.04",
-               "endDate": "2025.04",
-               "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": []
-            }
-         },
-         "namespace": "resume",
-         "actor": "Jinki Jung",
-         "owner": "Jinki Jung",
-         "state": "ACTIVE",
-         "act": {
-            "name": "Maritime Resource Registry"
-         },
-         "goal": "e-navigation",
-         "output": [
-            {
-               "name": "GitHub repository",
-               "link": "https://github.com/Digital-Maritime-Consultancy/mrr-portal"
-            },
-            {
-               "name": "Web page",
-               "link": "https://digital-maritime-consultancy.github.io/mrr-portal/"
-            }
-         ]
-      },
-      {
-         "id": "",
-         "about": {
-            "resumeTheme": {
-               "background": "#141410",
-               "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "transparent",
-               "contentFontColor": "#e8e8d8",
-               "secondaryFontColor": "#989878",
-               "thumbnail": "",
-               "figure": ""
-            },
-            "resume": {
-               "shortName": "VoTT-MOAD",
-               "category": [
-                  "front-end",
-                  "native application"
-               ],
-               "description": "super-pixel based annotation support in VoTT",
-               "myContributions": [
-                  "lead developer"
-               ],
-               "myCompetencies": [
-                  "Electron desktop application development",
-                  "Annotation workflow UX design",
-                  "ML training data pipeline tooling",
-                  "Open-source fork management"
-               ],
-               "techStack": [
-                  "Typescript",
-                  "React",
-                  "Electron"
-               ],
-               "affiliation": {
-                  "name": "DMC",
-                  "link": "https://dmc.international/"
-               },
-               "keywords": [
-                  "data collection for ML",
-                  "annotation tool"
-               ],
-               "startDate": "2020.10",
-               "endDate": "2021.11",
-               "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": []
-            }
-         },
-         "namespace": "resume",
-         "actor": "Jinki Jung",
-         "owner": "Jinki Jung",
-         "state": "DONE",
-         "act": {
-            "name": "Annotation tool development for MOAD project"
-         },
-         "goal": "MOAD",
-         "output": [
-            {
-               "name": "GitHub repository",
-               "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-MOAD"
-            },
-            {
-               "name": "Public dataset generated by the tool",
-               "link": "https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=116&topMenu=100&aihubDataSe=ty&dataSetSn=175"
-            }
-         ]
-      },
-      {
-         "id": "",
-         "about": {
-            "resumeTheme": {
-               "background": "#0e1c18",
-               "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "transparent",
-               "contentFontColor": "#d5ece6",
-               "secondaryFontColor": "#60a890",
-               "thumbnail": "",
-               "figure": ""
-            },
-            "resume": {
-               "shortName": "VoTT-dot",
-               "category": [
-                  "front-end",
-                  "back-end"
-               ],
-               "description": "efficent point-based semi-automatic annotation tool, powered by ML server",
-               "myContributions": [
-                  "lead front-end developer",
-                  "lead back-end developer"
-               ],
-               "myCompetencies": [
-                  "Semi-automatic ML annotation system design",
-                  "Backend and frontend integration",
-                  "Performance optimization for real-time interaction",
-                  "ML-assisted workflow engineering"
-               ],
-               "techStack": [
-                  "Typescript",
-                  "React",
-                  "Electron",
-                  "java",
-                  "Spring"
-               ],
-               "affiliation": {
-                  "name": "DMC",
-                  "link": "https://dmc.international/"
-               },
-               "keywords": [
-                  "data collection for ML",
-                  "annotation tool"
-               ],
-               "startDate": "2021.09",
-               "endDate": "2025.04",
-               "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": []
-            }
-         },
-         "namespace": "resume",
-         "actor": "Jinki Jung",
-         "owner": "Jinki Jung",
-         "state": "ACTIVE",
-         "act": {
-            "name": "Semi-automatic annotation service"
-         },
-         "goal": "MAIDAS",
-         "output": [
-            {
-               "name": "GitHub repository - front-end",
-               "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-dot"
-            },
-            {
-               "name": "GitHub repository - back-end",
-               "link": "https://github.com/Digital-Maritime-Consultancy/VoTT-dot-server"
-            }
-         ]
-      },
-      {
-         "id": "",
+         "id": "fb48b327-5d43-4531-a749-3103ca5997cc",
          "about": {
             "resumeTheme": {
                "background": "#1a1008",
+               "gradientType": "linear",
+               "gradientAngle": "160deg",
+               "gradientStops": [["#2a1c10", "0%"], ["#1a1008", "45%"], ["#0c0804", "100%"]],
+               "gradientOverlay": "radial-gradient(ellipse at 40% 60%, rgba(100,60,20,0.2) 0%, transparent 55%)",
                "fontFace": "",
                "titleFontColor": "white",
                "titleFontShadowColor": "transparent",
@@ -749,8 +511,11 @@
                "startDate": "2018.03",
                "endDate": "2018.10",
                "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": []
+               "myRole": "PM & Software Developer",
+               "features": [],
+               "story": "As AR-related safety incidents were rising in the wake of Pokémon GO's popularity, I was compelled to explore the intersection of augmented reality and user safety — as project lead, I designed the study, co-developed a deep learning-based traffic simulation system, and released the simulator as open source.",
+               "why": "With safety incidents linked to AR apps on the rise at the time, I wanted to investigate the safety implications of augmented reality use in everyday contexts.",
+               "contributionOverview": "As project lead, I designed the research experiment and co-developed a deep learning-based traffic situation simulator, which was released as open source."
             }
          },
          "namespace": "resume",
@@ -773,10 +538,14 @@
          ]
       },
       {
-         "id": "",
+         "id": "6480025c-3a84-40b6-bc43-91b4c88a5dbc",
          "about": {
             "resumeTheme": {
                "background": "#120a20",
+               "gradientType": "radial",
+               "gradientAngle": "ellipse at 50% 40%",
+               "gradientStops": [["#201435", "0%"], ["#120a20", "50%"], ["#080510", "100%"]],
+               "gradientOverlay": "linear-gradient(180deg, rgba(50,20,80,0.15) 0%, transparent 40%, rgba(20,10,40,0.2) 100%)",
                "fontFace": "",
                "titleFontColor": "white",
                "titleFontShadowColor": "transparent",
@@ -816,8 +585,11 @@
                "startDate": "2010.09",
                "endDate": "2014.12",
                "team": "Team of 4",
-"myRole": "PM & Software Developer",
-               "features": []
+               "myRole": "PM & Software Developer",
+               "features": [],
+               "story": "Wanting to build an augmented reality system from the engine up, I re-architected the existing desktop-only system into a server-client model to resolve scalability constraints, and through deep optimization enabled real-time performance on mobile devices.",
+               "why": "I wanted to build an augmented reality system from the ground up, implementing the engine myself rather than relying on existing frameworks.",
+               "contributionOverview": "I re-architected the existing desktop-only system into a server-client model to resolve scalability issues, and through targeted optimization enabled real-time operation on mobile devices."
             }
          },
          "namespace": "resume",
@@ -825,7 +597,7 @@
          "owner": "Jinki Jung",
          "state": "DONE",
          "act": {
-            "name": "Efficient mobile AR platform with real-time tracking"
+            "name": "Mobile AR Platform"
          },
          "output": [
             {
