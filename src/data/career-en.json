@@ -121,12 +121,10 @@
                ],
                "description": "Contributed across all core components of the Maritime Connectivity Platform (MCP) — building distributed digital identity infrastructure (MIR), a standards-based service discovery system (MSR), and a web-based administration portal for managing MCP resources.",
                "myContributions": [
-                  "distributed MIR development",
-                  "MMS integration as entity type",
-                  "deployment of MIR",
+                  "distributed MIR development/deployment",
                   "front and search page development",
                   "testing and maintenance",
-                  "lead developer",
+                  "Management Portal lead developer",
                   "deployment to GitHub Pages through Github Actions"
                ],
                "myCompetencies": [
@@ -134,14 +132,9 @@
                   "PKI & OIDC security engineering",
                   "Containerized deployment with Docker",
                   "Open-source project contribution",
-                  "Full-stack web development",
-                  "REST API design and integration",
-                  "Relational database management",
-                  "Software quality assurance",
                   "Lead front-end architecture (AngularJS)",
                   "CI/CD pipeline automation with GitHub Actions",
-                  "Open-source project stewardship",
-                  "User-facing admin interface design"
+                  "Open-source project stewardship"
                ],
                "techStack": [
                   "java",
@@ -159,10 +152,8 @@
                "keywords": [
                   "cyber security",
                   "authentication",
-                  "digitalization",
-                  "open-source",
-                  "service discovery",
-                  "management portal"
+                  "distributed network",
+                  "open-source"
                ],
                "startDate": "2019.04",
                "endDate": "2025.04",
@@ -171,18 +162,9 @@
                   "PKI / Certificate Authority",
                   "OAuth 2.0 / OpenID Connect",
                   "Identity & Access Management",
-                  "Distributed Trust System",
                   "Service Discovery",
-                  "Metadata Management",
-                  "REST API",
                   "Geospatial Search & Filtering",
-                  "SECOM Interface",
-                  "MIR / MSR Resource Management UI",
-                  "PKI Key Pair & CSR Generation (Go WASM)",
-                  "PKCS#12 Keystore Management",
-                  "OIDC-based Authentication",
-                  "Multi-environment Configuration",
-                  "i18n (EN / KO)"
+                  "MIR / MSR Resource Management UI"
                ],
                "story": "Motivated by the desire to collaborate with talented peers and create a meaningful open-source impact in the maritime domain — and to contribute to safety in a new way — I led the development of the MCP Management Portal to broaden MCP accessibility, while also contributing to the distributed MIR architecture and MSR implementation.",
                "why": "I wanted to experience the kind of collaboration where talented peers work together through open source to create a positive impact in a field — and I saw it as a new way to contribute to safety beyond conventional approaches.",
