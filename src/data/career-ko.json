@@ -4,9 +4,9 @@
       "subtitle": "A portfolio of",
       "name": "Jinki Jung",
       "links": [
-         { "label": "Download CV", "url": "#" },
-         { "label": "Linked in", "url": "#" },
-         { "label": "Personal webpage", "url": "#" }
+         { "label": "Download CV", "url": "https://github.com/JinkiJung/jinkijung.github.com/blob/master/static/pdf/Curriculum_vitae_250707.pdf" },
+         { "label": "LinkedIn", "url": "https://www.linkedin.com/in/jinkijung/" },
+         { "label": "Personal webpage", "url": "https://jinkijung.github.io/" }
       ]
    },
    "career": [
