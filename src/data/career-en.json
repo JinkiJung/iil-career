@@ -157,7 +157,7 @@
                ],
                "startDate": "2019.04",
                "endDate": "2025.04",
-               "team": "MCC IDSEC WG · Team of 4",
+               "team": "MCP Consortium",
                "features": [
                   "PKI / Certificate Authority",
                   "OAuth 2.0 / OpenID Connect",
@@ -241,7 +241,7 @@
                ],
                "startDate": "2021.08",
                "endDate": "2025.04",
-               "team": "Team of 4",
+               "team": "MCC MMS WG",
                "myRole": "PM & Software Developer",
                "features": [
                   "Carrier-Agnostic Messaging",
@@ -274,84 +274,6 @@
             {
                "name": "MMS demonstrator (currently only works with http, not https)",
                "link": "http://mms-demo.dmc.international/"
-            }
-         ]
-      },
-      {
-         "id": "b5c232d6-92d9-4510-aa0d-da9a8dd6f146",
-         "about": {
-            "resumeTheme": {
-               "background": "#1c1c1c",
-               "gradientType": "radial",
-               "gradientAngle": "ellipse at 50% 50%",
-               "gradientStops": [["#2a2a2a", "0%"], ["#1c1c1c", "50%"], ["#111111", "100%"]],
-               "gradientOverlay": "conic-gradient(from 45deg at 50% 50%, rgba(60,60,60,0.08) 0deg, transparent 90deg, rgba(60,60,60,0.05) 180deg, transparent 270deg)",
-               "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "transparent",
-               "contentFontColor": "#e8e8e8",
-               "secondaryFontColor": "#909090",
-               "thumbnail": "",
-               "figure": ""
-            },
-            "resume": {
-               "shortName": "iil",
-               "category": [
-                  "research"
-               ],
-               "description": "a high-level script for representing works and its consequences, spinoff of previous project 'Tasc'",
-               "myContributions": [
-                  "founder of iil",
-                  "lead developer"
-               ],
-               "myCompetencies": [
-                  "Domain-specific language design",
-                  "Technical documentation and specification writing",
-                  "Research-driven product definition",
-                  "Independent project ownership"
-               ],
-               "techStack": [
-                  "markdown"
-               ],
-               "affiliation": {
-                  "name": "personal",
-                  "link": "https://jinkijung.github.io/"
-               },
-               "keywords": [
-                  "efficiency",
-                  "modeling"
-               ],
-               "startDate": "2022.01",
-               "endDate": "now",
-               "team": "Team of 4",
-               "myRole": "PM & Software Developer",
-               "features": [
-                  "Condition-driven Task Activation",
-                  "Actor & Role Assignment",
-                  "Hierarchical Task Decomposition (goal / steps)",
-                  "Input / Output Data Binding",
-                  "State Machine (7-state lifecycle)",
-                  "Conditional Workflow Transition (checkout)",
-                  "Error Handling & Fallback Routing",
-                  "Namespace-scoped ULID Identification"
-               ],
-               "story": "Motivated by a desire to define a formal specification for knowledge work itself, I established the core conceptual framework and am currently developing both a book and a working implementation grounded in it.",
-               "why": "I wanted to define a formal specification for work itself — a structured framework that could bring clarity and consistency to how knowledge work is conceptualized and executed.",
-               "contributionOverview": "I established the core conceptual framework and am currently developing both a book and a working implementation based on it."
-            }
-         },
-         "namespace": "resume",
-         "actor": "Jinki Jung",
-         "owner": "Jinki Jung",
-         "state": "ACTIVE",
-         "act": {
-            "name": "iil"
-         },
-         "goal": "iil",
-         "output": [
-            {
-               "name": "Web page",
-               "link": "https://iil.readthedocs.org"
             }
          ]
       },
@@ -403,8 +325,8 @@
                ],
                "startDate": "2019.08",
                "endDate": "2020.04",
-               "team": "Team of 4",
-               "myRole": "PM & Software Developer",
+               "team": "Team of 5",
+               "myRole": "PM & Lead Software Developer",
                "features": [],
                "story": "Frustrated by how even minor changes to training scripts required extensive rework across the entire program, I conceived a standardized scripting system with a dedicated engine to interpret it — as project lead, I defined the Tasc script format specification, built the engine, produced three example implementations, and released the full source code as open source, publishing the work as a research paper.",
                "why": "Training programs required extensive rework whenever scripts changed even slightly, so I wanted to solve this by creating a standardized script format and a dedicated engine to interpret it — enabling easily maintainable VR-based training.",
@@ -493,7 +415,7 @@
                "startDate": "2018.03",
                "endDate": "2018.10",
                "team": "Team of 4",
-               "myRole": "PM & Software Developer",
+               "myRole": "PM & Lead Software Developer",
                "features": [],
                "story": "As AR-related safety incidents were rising in the wake of Pokémon GO's popularity, I was compelled to explore the intersection of augmented reality and user safety — as project lead, I designed the study, co-developed a deep learning-based traffic simulation system, and released the simulator as open source.",
                "why": "With safety incidents linked to AR apps on the rise at the time, I wanted to investigate the safety implications of augmented reality use in everyday contexts.",
@@ -566,8 +488,8 @@
                ],
                "startDate": "2010.09",
                "endDate": "2014.12",
-               "team": "Team of 4",
-               "myRole": "PM & Software Developer",
+               "team": "Team of 3",
+               "myRole": "Lead Software Developer",
                "features": [],
                "story": "Wanting to build an augmented reality system from the engine up, I re-architected the existing desktop-only system into a server-client model to resolve scalability constraints, and through deep optimization enabled real-time performance on mobile devices.",
                "why": "I wanted to build an augmented reality system from the ground up, implementing the engine myself rather than relying on existing frameworks.",
@@ -589,6 +511,84 @@
             {
                "name": "Paper - Smartphone as an augmented reality authoring tool via multi-touch based 3D interaction method",
                "link": "https://dl.acm.org/doi/abs/10.1145/2407516.2407520"
+            }
+         ]
+      },
+      {
+         "id": "b5c232d6-92d9-4510-aa0d-da9a8dd6f146",
+         "about": {
+            "resumeTheme": {
+               "background": "#1c1c1c",
+               "gradientType": "radial",
+               "gradientAngle": "ellipse at 50% 50%",
+               "gradientStops": [["#2a2a2a", "0%"], ["#1c1c1c", "50%"], ["#111111", "100%"]],
+               "gradientOverlay": "conic-gradient(from 45deg at 50% 50%, rgba(60,60,60,0.08) 0deg, transparent 90deg, rgba(60,60,60,0.05) 180deg, transparent 270deg)",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#e8e8e8",
+               "secondaryFontColor": "#909090",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "iil",
+               "category": [
+                  "research"
+               ],
+               "description": "a high-level script for representing works and its consequences, spinoff of previous project 'Tasc'",
+               "myContributions": [
+                  "founder of iil",
+                  "lead developer"
+               ],
+               "myCompetencies": [
+                  "Domain-specific language design",
+                  "Technical documentation and specification writing",
+                  "Research-driven product definition",
+                  "Independent project ownership"
+               ],
+               "techStack": [
+                  "markdown"
+               ],
+               "affiliation": {
+                  "name": "personal",
+                  "link": "https://jinkijung.github.io/"
+               },
+               "keywords": [
+                  "efficiency",
+                  "modeling"
+               ],
+               "startDate": "2022.01",
+               "endDate": "now",
+               "team": "Team of 1",
+               "myRole": "PM & Software Developer",
+               "features": [
+                  "Condition-driven Task Activation",
+                  "Actor & Role Assignment",
+                  "Hierarchical Task Decomposition (goal / steps)",
+                  "Input / Output Data Binding",
+                  "State Machine (7-state lifecycle)",
+                  "Conditional Workflow Transition (checkout)",
+                  "Error Handling & Fallback Routing",
+                  "Namespace-scoped ULID Identification"
+               ],
+               "story": "Motivated by a desire to define a formal specification for knowledge work itself, I established the core conceptual framework and am currently developing both a book and a working implementation grounded in it.",
+               "why": "I wanted to define a formal specification for work itself — a structured framework that could bring clarity and consistency to how knowledge work is conceptualized and executed.",
+               "contributionOverview": "I established the core conceptual framework and am currently developing both a book and a working implementation based on it."
+            }
+         },
+         "namespace": "resume",
+         "actor": "Jinki Jung",
+         "owner": "Jinki Jung",
+         "state": "ACTIVE",
+         "act": {
+            "name": "iil"
+         },
+         "goal": "iil",
+         "output": [
+            {
+               "name": "Web page",
+               "link": "https://iil.readthedocs.org"
             }
          ]
       }

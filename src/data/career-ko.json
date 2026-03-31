@@ -158,7 +158,7 @@
                ],
                "startDate": "2019.04",
                "endDate": "2025.04",
-               "team": "MCC IDSEC WG · 4인팀",
+               "team": "MCP 컨소시엄",
                "features": [
                   "PKI / 인증 기관",
                   "OAuth 2.0 / OpenID Connect",
@@ -242,7 +242,7 @@
                ],
                "startDate": "2021.08",
                "endDate": "now",
-               "team": "4인팀",
+               "team": "MCC MMS WG",
                "myRole": "PM & Software Developer",
                "features": [
                   "통신 수단 독립적 메시징",
@@ -275,84 +275,6 @@
             {
                "name": "MMS 데모 (현재 http에서만 작동, https 미지원)",
                "link": "http://mms-demo.dmc.international/"
-            }
-         ]
-      },
-      {
-         "id": "b5c232d6-92d9-4510-aa0d-da9a8dd6f146",
-         "about": {
-            "resumeTheme": {
-               "background": "#1c1c1c",
-               "gradientType": "radial",
-               "gradientAngle": "ellipse at 50% 50%",
-               "gradientStops": [["#2a2a2a", "0%"], ["#1c1c1c", "50%"], ["#111111", "100%"]],
-               "gradientOverlay": "conic-gradient(from 45deg at 50% 50%, rgba(60,60,60,0.08) 0deg, transparent 90deg, rgba(60,60,60,0.05) 180deg, transparent 270deg)",
-               "fontFace": "",
-               "titleFontColor": "white",
-               "titleFontShadowColor": "transparent",
-               "contentFontColor": "#e8e8e8",
-               "secondaryFontColor": "#909090",
-               "thumbnail": "",
-               "figure": ""
-            },
-            "resume": {
-               "shortName": "iil",
-               "category": [
-                  "연구"
-               ],
-               "description": "작업과 그 결과를 표현하기 위한 고수준 스크립트, 이전 프로젝트 'Tasc'의 후속 프로젝트",
-               "myContributions": [
-                  "iil 창시자",
-                  "리드 개발자"
-               ],
-               "myCompetencies": [
-                  "도메인 특화 언어 설계",
-                  "기술 문서화 및 명세 작성",
-                  "연구 기반 제품 정의",
-                  "독립 프로젝트 오너십"
-               ],
-               "techStack": [
-                  "markdown"
-               ],
-               "affiliation": {
-                  "name": "개인",
-                  "link": "https://jinkijung.github.io/"
-               },
-               "keywords": [
-                  "효율성",
-                  "모델링"
-               ],
-               "startDate": "2022.01",
-               "endDate": "now",
-               "team": "4인팀",
-               "myRole": "PM & Software Developer",
-               "features": [
-                  "조건 기반 작업 활성화",
-                  "액터 및 역할 할당",
-                  "계층적 작업 분해 (goal / steps)",
-                  "입출력 데이터 바인딩",
-                  "상태 머신 (7단계 라이프사이클)",
-                  "조건부 워크플로우 전환 (checkout)",
-                  "에러 핸들링 및 폴백 라우팅",
-                  "네임스페이스 기반 ULID 식별"
-               ],
-               "story": "업무 자체에 대한 규격을 정립하고자 하는 열망에서 출발하여, 핵심 개념적 프레임워크를 직접 정립하고 이를 기반으로 책과 구현체를 현재 작성 중입니다.",
-               "why": "업무 자체에 대한 규격을 만들어, 지식 노동이 개념화되고 실행되는 방식에 명확성과 일관성을 부여하는 구조적 프레임워크를 정립하고 싶었습니다.",
-               "contributionOverview": "핵심 개념 프레임워크를 정립하고, 이를 기반으로 책과 구현체를 현재 작성 중입니다."
-            }
-         },
-         "namespace": "resume",
-         "actor": "정진기",
-         "owner": "정진기",
-         "state": "ACTIVE",
-         "act": {
-            "name": "iil"
-         },
-         "goal": "iil",
-         "output": [
-            {
-               "name": "웹 페이지",
-               "link": "https://iil.readthedocs.org"
             }
          ]
       },
@@ -404,8 +326,8 @@
                ],
                "startDate": "2019.08",
                "endDate": "2020.04",
-               "team": "4인팀",
-               "myRole": "PM & Software Developer",
+               "team": "5인팀",
+               "myRole": "PM & Lead Software Developer",
                "features": [],
                "story": "훈련 스크립트의 사소한 수정도 프로그램 전반의 대대적인 수정을 요구하는 문제를 해결하고자, 규격화된 스크립트 시스템과 이를 해석하는 엔진을 직접 구상하고 프로젝트 리더로서 Tasc 스크립트 포맷 표준을 정의하고 엔진을 구현하여 세 가지 예제와 함께 전체 소스코드를 오픈소스로 공개하고 논문으로 발표했습니다.",
                "why": "훈련 스크립트를 조금만 수정해도 프로그램 전반을 대폭 수정해야 하는 문제가 많아, 규격화된 스크립트와 이를 해석하는 전용 엔진을 만들어 수정이 용이한 가상현실 기반 훈련 시스템을 구현하고 싶었습니다.",
@@ -494,7 +416,7 @@
                "startDate": "2018.03",
                "endDate": "2018.10",
                "team": "4인팀",
-               "myRole": "PM & Software Developer",
+               "myRole": "PM & Lead Software Developer",
                "features": [],
                "story": "포켓몬고로 인한 증강현실 관련 안전사고가 증가하던 시기에 증강현실 사용과 안전의 연관성을 탐구하고자, 프로젝트 리더로서 실험을 직접 설계하고 딥러닝 기반 교통 상황 시뮬레이터를 공동 개발하여 오픈소스로 공개했습니다.",
                "why": "당시 포켓몬고로 인한 안전사고가 증가하는 상황에서, 증강현실 사용이 일상적 안전에 미치는 영향을 연구해보고 싶었습니다.",
@@ -567,8 +489,8 @@
                ],
                "startDate": "2010.09",
                "endDate": "2014.12",
-               "team": "4인팀",
-               "myRole": "PM & Software Developer",
+               "team": "3인팀",
+               "myRole": "Lead Software Developer",
                "features": [],
                "story": "증강현실 엔진을 직접 구현해보겠다는 목표 아래, 기존 데스크탑 전용 시스템을 서버-클라이언트 구조로 재설계하여 확장성 문제를 해결하고 최적화를 통해 모바일 기기에서 실시간 동작이 가능하도록 성능을 끌어올렸습니다.",
                "why": "기존 프레임워크에 의존하지 않고 증강현실 엔진을 직접 처음부터 구현해보고 싶었습니다.",
@@ -590,6 +512,84 @@
             {
                "name": "논문 - 멀티터치 기반 3D 상호작용 방식을 활용한 증강현실 저작 도구로서의 스마트폰",
                "link": "https://dl.acm.org/doi/abs/10.1145/2407516.2407520"
+            }
+         ]
+      },
+      {
+         "id": "b5c232d6-92d9-4510-aa0d-da9a8dd6f146",
+         "about": {
+            "resumeTheme": {
+               "background": "#1c1c1c",
+               "gradientType": "radial",
+               "gradientAngle": "ellipse at 50% 50%",
+               "gradientStops": [["#2a2a2a", "0%"], ["#1c1c1c", "50%"], ["#111111", "100%"]],
+               "gradientOverlay": "conic-gradient(from 45deg at 50% 50%, rgba(60,60,60,0.08) 0deg, transparent 90deg, rgba(60,60,60,0.05) 180deg, transparent 270deg)",
+               "fontFace": "",
+               "titleFontColor": "white",
+               "titleFontShadowColor": "transparent",
+               "contentFontColor": "#e8e8e8",
+               "secondaryFontColor": "#909090",
+               "thumbnail": "",
+               "figure": ""
+            },
+            "resume": {
+               "shortName": "iil",
+               "category": [
+                  "연구"
+               ],
+               "description": "작업과 그 결과를 표현하기 위한 고수준 스크립트, 이전 프로젝트 'Tasc'의 후속 프로젝트",
+               "myContributions": [
+                  "iil 창시자",
+                  "리드 개발자"
+               ],
+               "myCompetencies": [
+                  "도메인 특화 언어 설계",
+                  "기술 문서화 및 명세 작성",
+                  "연구 기반 제품 정의",
+                  "독립 프로젝트 오너십"
+               ],
+               "techStack": [
+                  "markdown"
+               ],
+               "affiliation": {
+                  "name": "개인",
+                  "link": "https://jinkijung.github.io/"
+               },
+               "keywords": [
+                  "효율성",
+                  "모델링"
+               ],
+               "startDate": "2022.01",
+               "endDate": "now",
+               "team": "1인팀",
+               "myRole": "PM & Software Developer",
+               "features": [
+                  "조건 기반 작업 활성화",
+                  "액터 및 역할 할당",
+                  "계층적 작업 분해 (goal / steps)",
+                  "입출력 데이터 바인딩",
+                  "상태 머신 (7단계 라이프사이클)",
+                  "조건부 워크플로우 전환 (checkout)",
+                  "에러 핸들링 및 폴백 라우팅",
+                  "네임스페이스 기반 ULID 식별"
+               ],
+               "story": "업무 자체에 대한 규격을 정립하고자 하는 열망에서 출발하여, 핵심 개념적 프레임워크를 직접 정립하고 이를 기반으로 책과 구현체를 현재 작성 중입니다.",
+               "why": "업무 자체에 대한 규격을 만들어, 지식 노동이 개념화되고 실행되는 방식에 명확성과 일관성을 부여하는 구조적 프레임워크를 정립하고 싶었습니다.",
+               "contributionOverview": "핵심 개념 프레임워크를 정립하고, 이를 기반으로 책과 구현체를 현재 작성 중입니다."
+            }
+         },
+         "namespace": "resume",
+         "actor": "정진기",
+         "owner": "정진기",
+         "state": "ACTIVE",
+         "act": {
+            "name": "iil"
+         },
+         "goal": "iil",
+         "output": [
+            {
+               "name": "웹 페이지",
+               "link": "https://iil.readthedocs.org"
             }
          ]
       }
