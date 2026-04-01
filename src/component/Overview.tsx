@@ -1,5 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Badge } from '@/components/ui/badge';
+import { resolveHeroComponent } from './hero/registry';
+import { useScrollProgress } from '@/hooks/useScrollProgress';
 import './Overview.scss';
 
 export interface OverviewProps {
@@ -14,11 +16,29 @@ export const Overview = ({ item }: OverviewProps) => {
     const titleColor = theme.titleFontColor;
     const shadowColor = theme.titleFontShadowColor;
     const titleRowRef = useRef<HTMLDivElement>(null);
+    const heroRef = useRef<HTMLDivElement>(null);
+    const [heroDims, setHeroDims] = useState({ width: 0, height: 0 });
+    const progress = useScrollProgress(heroRef);
+    const HeroComponent = resolveHeroComponent(theme.figure);
 
-    const allTags = [
+    useEffect(() => {
+        const el = heroRef.current;
+        if (!el) return;
+        const ro = new ResizeObserver(([entry]) => {
+            setHeroDims({
+                width: entry.contentRect.width,
+                height: entry.contentRect.height,
+            });
+        });
+        ro.observe(el);
+        return () => ro.disconnect();
+    }, []);
+
+    const allTags = [...new Set([
         ...(resume?.category ?? []),
         ...(resume?.keywords ?? []),
-    ];
+    ])];
+    const outputs: { name: string; link: string }[] = item.output ?? [];
 
     const titleWords = (item.act.name as string).split(' ');
 
@@ -65,12 +85,27 @@ export const Overview = ({ item }: OverviewProps) => {
                 <p className="overview-subtitle" style={{ color: secondaryColor }}>
                     {resume?.affiliation?.name} &middot; {resume?.startDate} — {resume?.endDate}
                 </p>
-                <div className="overview-hero-image">
-                    <img
-                        src={`/iil-career/images/${encodeURIComponent(resume?.shortName)}.png`}
-                        alt={resume?.shortName}
-                        className="overview-hero-img"
-                    />
+                <div
+                    className="overview-hero-image"
+                    ref={heroRef}
+                    style={progress > 0.8 ? { pointerEvents: 'none' } : undefined}
+                >
+                    {HeroComponent ? (
+                        <HeroComponent
+                            contentColor={contentColor}
+                            secondaryColor={secondaryColor}
+                            titleColor={titleColor}
+                            progress={progress}
+                            width={heroDims.width}
+                            height={heroDims.height}
+                        />
+                    ) : (
+                        <img
+                            src={`/iil-career/images/${encodeURIComponent(resume?.shortName)}.png`}
+                            alt={resume?.shortName}
+                            className="overview-hero-img"
+                        />
+                    )}
                 </div>
             </div>
 
@@ -79,16 +114,39 @@ export const Overview = ({ item }: OverviewProps) => {
 
             {/* Bottom: 3-column meta row */}
             <div className="overview-meta-row">
-                {/* Col 1: Period */}
+                {/* Col 1: Showcase (output links) ↔ Period crossfade */}
                 <div className="overview-meta-col overview-meta-col--period">
-                    <span className="overview-meta-label" style={{ color: secondaryColor }}>
-                        Period
-                    </span>
-                    <span className="overview-meta-period" style={{ color: contentColor }}>
-                        {resume?.startDate}
-                        <br />
-                        — {resume?.endDate}
-                    </span>
+                    {outputs.length > 0 && (
+                        <div className="overview-period-outputs">
+                            <span className="overview-meta-label" style={{ color: secondaryColor }}>
+                                Showcase
+                            </span>
+                            <div className="overview-output-links">
+                                {outputs.map((o) => (
+                                    <a
+                                        key={o.link}
+                                        href={o.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="overview-output-link"
+                                        style={{ color: contentColor }}
+                                    >
+                                        {o.name}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                    <div className={`overview-period-dates${outputs.length > 0 ? '' : ' overview-period-dates--only'}`}>
+                        <span className="overview-meta-label" style={{ color: secondaryColor }}>
+                            Period
+                        </span>
+                        <span className="overview-meta-period" style={{ color: contentColor }}>
+                            {resume?.startDate}
+                            <br />
+                            — {resume?.endDate}
+                        </span>
+                    </div>
                 </div>
 
                 {/* Col 2: Team & Role */}

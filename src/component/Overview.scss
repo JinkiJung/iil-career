@@ -159,6 +159,67 @@
     opacity: 0.6;
 }
 
+/* ── Period ↔ Showcase crossfade ── */
+.overview-meta-col--period {
+    position: relative;
+}
+
+.overview-period-outputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    transition: opacity 0.4s ease;
+}
+
+.overview-period-dates {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    /* When no output links exist, dates should always be visible in-flow */
+    &--only {
+        position: static;
+        opacity: 1;
+    }
+}
+
+.section-sticky .overview-period-outputs {
+    opacity: clamp(0, 1 - (var(--p) - 0.8) * 5, 1);
+}
+
+.section-sticky .overview-period-dates:not(.overview-period-dates--only) {
+    opacity: clamp(0, (var(--p) - 0.8) * 5, 1);
+}
+
+.overview-output-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.overview-output-link {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0.8;
+    line-height: 1.35;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    &:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
+}
+
 .overview-meta-period {
     font-size: 1.6rem;
     font-weight: 800;

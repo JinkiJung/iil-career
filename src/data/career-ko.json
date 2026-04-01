@@ -28,7 +28,7 @@
                "contentFontColor": "#e8edf5",
                "secondaryFontColor": "#8fa3c8",
                "thumbnail": "",
-               "figure": ""
+               "figure": "iil-career.SeaWaveChat"
             },
             "resume": {
                "shortName": "chatsea",
@@ -111,7 +111,7 @@
                "contentFontColor": "#e8edf5",
                "secondaryFontColor": "#8fa3c8",
                "thumbnail": "",
-               "figure": ""
+               "figure": "iil-career.IdentityConstellation"
             },
             "resume": {
                "shortName": "MCP",
@@ -205,7 +205,7 @@
                "contentFontColor": "#d8ede8",
                "secondaryFontColor": "#6ab89e",
                "thumbnail": "",
-               "figure": ""
+               "figure": "iil-career.NetworkGraph"
             },
             "resume": {
                "shortName": "MMS",
@@ -293,7 +293,7 @@
                "contentFontColor": "#eedde6",
                "secondaryFontColor": "#b07898",
                "thumbnail": "",
-               "figure": ""
+               "figure": "iil-career.ScriptFlowEngine"
             },
             "resume": {
                "shortName": "Tasc",
@@ -380,7 +380,7 @@
                "contentFontColor": "#ede0d0",
                "secondaryFontColor": "#a87850",
                "thumbnail": "",
-               "figure": ""
+               "figure": "iil-career.ParallaxDepthLayers"
             },
             "resume": {
                "shortName": "AR for safety",
@@ -457,7 +457,7 @@
                "contentFontColor": "#e0d5f0",
                "secondaryFontColor": "#9070c8",
                "thumbnail": "",
-               "figure": ""
+               "figure": "iil-career.FeatureTracker"
             },
             "resume": {
                "shortName": "MLVT",
@@ -530,7 +530,7 @@
                "contentFontColor": "#e8e8e8",
                "secondaryFontColor": "#909090",
                "thumbnail": "",
-               "figure": ""
+               "figure": "iil-career.StateMachineOrbit"
             },
             "resume": {
                "shortName": "iil",
