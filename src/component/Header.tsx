@@ -24,6 +24,10 @@ export const Header = ({ frontPage }: HeaderProps) => {
         const nameEl = nameRef.current;
         if (!subtitleEl || !nameEl) return;
 
+        // Set text from props to handle locale changes
+        subtitleEl.textContent = frontPage.subtitle;
+        nameEl.textContent = frontPage.name;
+
         subtitleEl.innerHTML = subtitleEl.textContent!.replace(/\S/g, "<span class='header-subtitle-letter'>$&</span>");
         nameEl.innerHTML = nameEl.textContent!.replace(/\S/g, "<span class='header-name-letter'>$&</span>");
 
@@ -42,7 +46,7 @@ export const Header = ({ frontPage }: HeaderProps) => {
                 duration: 2000,
                 delay: (_el: HTMLElement, i: number) => 120 * (i + 1),
             }, 0);
-    }, []);
+    }, [frontPage.subtitle, frontPage.name]);
 
     return (
         <div className="header">

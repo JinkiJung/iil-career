@@ -3,9 +3,10 @@ import './LangSwitch.scss';
 
 interface LangSwitchProps {
     current: string;
+    onDarkBg?: boolean;
 }
 
-export const LangSwitch = ({ current }: LangSwitchProps) => {
+export const LangSwitch = ({ current, onDarkBg = false }: LangSwitchProps) => {
     const navigate = useNavigate();
 
     const switchTo = (locale: string) => {
@@ -15,7 +16,7 @@ export const LangSwitch = ({ current }: LangSwitchProps) => {
     };
 
     return (
-        <div className="lang-switch">
+        <div className={`lang-switch ${onDarkBg ? '' : 'lang-switch--light'}`}>
             <button
                 className={`lang-switch-btn ${current === 'en' ? 'lang-switch-btn--active' : ''}`}
                 onClick={() => switchTo('en')}

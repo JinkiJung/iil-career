@@ -16,7 +16,7 @@
     letter-spacing: 0.08em;
     padding: 2px 4px;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: color 0.4s ease;
 
     &:hover {
         color: rgba(255, 255, 255, 0.6);
@@ -25,6 +25,19 @@
     &--active {
         color: rgba(255, 255, 255, 0.7);
     }
+}
+
+/* First page (light background) */
+.lang-switch--light .lang-switch-btn {
+    color: rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.lang-switch--light .lang-switch-btn--active {
+    color: rgba(0, 0, 0, 0.55);
 }
 
 @media (max-width: 768px) {

@@ -1,8 +1,8 @@
 {
    "frontPage": {
       "title": "정진기의 경력",
-      "subtitle": "A portfolio of",
-      "name": "Jinki Jung",
+      "subtitle": "포트폴리오",
+      "name": "정진기",
       "links": [
          { "label": "Download CV", "url": "https://github.com/JinkiJung/jinkijung.github.com/blob/master/static/pdf/Curriculum_vitae_250707.pdf" },
          { "label": "LinkedIn", "url": "https://www.linkedin.com/in/jinkijung/" },

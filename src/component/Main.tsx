@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import dataEn from '../data/career-en.json';
 import dataKo from '../data/career-ko.json';
@@ -19,10 +20,22 @@ interface MainProps {
 
 export const Main = ({ locale = 'en' }: MainProps) => {
     const data = dataMap[locale] ?? dataEn;
+    const [pastHeader, setPastHeader] = useState(false);
+
+    useEffect(() => {
+        const container = document.querySelector('.careerContainer') as HTMLElement;
+        if (!container) return;
+        const onScroll = () => {
+            setPastHeader(container.scrollTop > window.innerHeight * 0.5);
+        };
+        container.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        return () => container.removeEventListener('scroll', onScroll);
+    }, []);
 
     return (
         <ScrollManagerProvider>
-            <LangSwitch current={locale} />
+            <LangSwitch current={locale} onDarkBg={pastHeader} />
             <ScrollRuler entries={data.career as any[]} />
             <Container fluid className="careerContainer p-0">
                 <Header frontPage={data.frontPage} />
