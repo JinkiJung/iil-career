@@ -1,11 +1,30 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Badge } from '@/components/ui/badge';
-import { resolveHeroComponent } from './hero/registry';
-import { useScrollProgress } from '@/hooks/useScrollProgress';
 import './Overview.scss';
 
 export interface OverviewProps {
     item: any;
+}
+
+type MediaKind = 'image' | 'video';
+type MediaInfo = { file: string; kind: MediaKind; src: string };
+
+const BASE_URL = import.meta.env.BASE_URL ?? '/';
+const VIDEO_EXTENSIONS = new Set(['mp4', 'webm', 'mov', 'm4v', 'ogg']);
+
+function resolveMedia(thumbnail: string | undefined): MediaInfo | null {
+    if (!thumbnail) return null;
+    const trimmed = thumbnail.trim();
+    if (!trimmed) return null;
+    const ext = trimmed.split('.').pop()?.toLowerCase() ?? '';
+    const kind: MediaKind = VIDEO_EXTENSIONS.has(ext) ? 'video' : 'image';
+    // If the thumbnail is already an absolute/site URL, use it directly;
+    // otherwise resolve it against public/images/.
+    const isAbsolute = /^(https?:)?\/\//.test(trimmed) || trimmed.startsWith(BASE_URL);
+    const src = isAbsolute
+        ? trimmed
+        : `${BASE_URL}images/${encodeURIComponent(trimmed)}`;
+    return { file: trimmed, kind, src };
 }
 
 export const Overview = ({ item }: OverviewProps) => {
@@ -16,23 +35,8 @@ export const Overview = ({ item }: OverviewProps) => {
     const titleColor = theme.titleFontColor;
     const shadowColor = theme.titleFontShadowColor;
     const titleRowRef = useRef<HTMLDivElement>(null);
-    const heroRef = useRef<HTMLDivElement>(null);
-    const [heroDims, setHeroDims] = useState({ width: 0, height: 0 });
-    const progress = useScrollProgress(heroRef);
-    const HeroComponent = resolveHeroComponent(theme.figure);
 
-    useEffect(() => {
-        const el = heroRef.current;
-        if (!el) return;
-        const ro = new ResizeObserver(([entry]) => {
-            setHeroDims({
-                width: entry.contentRect.width,
-                height: entry.contentRect.height,
-            });
-        });
-        ro.observe(el);
-        return () => ro.disconnect();
-    }, []);
+    const media = resolveMedia(item.about?.thumbnail);
 
     const allTags = [...new Set([
         ...(resume?.category ?? []),
@@ -65,48 +69,53 @@ export const Overview = ({ item }: OverviewProps) => {
     return (
         <div className="overview-container">
             {/* Title area — starts centered (hero), transitions to top (compact) */}
-            <div className="overview-title-row" ref={titleRowRef}>
-                <h1 className="overview-title" aria-label={item.act.name}>
-                    {titleWords.map((word, i) => (
-                        <span key={i} className="overview-title-mask">
-                            <span
-                                className="overview-title-word"
-                                style={{
-                                    color: titleColor,
-                                    textShadow: `2px 2px 0 ${shadowColor}`,
-                                    transitionDelay: `${i * 0.08}s`,
-                                }}
-                            >
-                                {word}
+            <div
+                className={`overview-title-row ${media ? 'overview-title-row--has-media' : ''}`.trim()}
+                ref={titleRowRef}
+            >
+                <div className="overview-title-text">
+                    <h1 className="overview-title" aria-label={item.act.name}>
+                        {titleWords.map((word, i) => (
+                            <span key={i} className="overview-title-mask">
+                                <span
+                                    className="overview-title-word"
+                                    style={{
+                                        color: titleColor,
+                                        textShadow: `2px 2px 0 ${shadowColor}`,
+                                        transitionDelay: `${i * 0.08}s`,
+                                    }}
+                                >
+                                    {word}
+                                </span>
                             </span>
-                        </span>
-                    ))}
-                </h1>
-                <p className="overview-subtitle" style={{ color: secondaryColor }}>
-                    {resume?.affiliation?.name} &middot; {resume?.startDate} — {resume?.endDate}
-                </p>
-                <div
-                    className="overview-hero-image"
-                    ref={heroRef}
-                    style={progress > 0.8 ? { pointerEvents: 'none' } : undefined}
-                >
-                    {HeroComponent ? (
-                        <HeroComponent
-                            contentColor={contentColor}
-                            secondaryColor={secondaryColor}
-                            titleColor={titleColor}
-                            progress={progress}
-                            width={heroDims.width}
-                            height={heroDims.height}
-                        />
-                    ) : (
-                        <img
-                            src={`/iil-career/images/${encodeURIComponent(resume?.shortName)}.png`}
-                            alt={resume?.shortName}
-                            className="overview-hero-img"
-                        />
-                    )}
+                        ))}
+                    </h1>
+                    <p className="overview-subtitle" style={{ color: secondaryColor }}>
+                        {resume?.affiliation?.name} &middot; {resume?.startDate} — {resume?.endDate}
+                    </p>
                 </div>
+                {media && (
+                    <div className="overview-hero-media">
+                        {media.kind === 'video' ? (
+                            <video
+                                className="overview-hero-video"
+                                src={media.src}
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                preload="metadata"
+                                aria-label={resume?.shortName}
+                            />
+                        ) : (
+                            <img
+                                className="overview-hero-img"
+                                src={media.src}
+                                alt={resume?.shortName}
+                            />
+                        )}
+                    </div>
+                )}
             </div>
 
             {/* Divider */}

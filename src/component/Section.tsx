@@ -76,7 +76,7 @@ export const Section = ({ item }: SectionProp) => {
                                 <Card style={cardStyle} className="section-card">
                                     <CardHeader className="section-card-header">
                                         <CardTitle style={{ color: contentColor }} className="section-card-title">
-                                            Why?
+                                            Motivation
                                         </CardTitle>
                                     </CardHeader>
                                     <CardContent>

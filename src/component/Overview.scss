@@ -13,15 +13,30 @@
    Title row
    ═══════════════════════════════════════ */
 .overview-title-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'title';
+    gap: 2.5rem;
+    align-items: stretch;
     padding: 0 3rem;
+}
+
+.overview-title-row--has-media {
+    grid-template-columns: minmax(0, 1.3fr) minmax(220px, 0.7fr);
+    grid-template-areas: 'title media';
+    align-items: center;
 }
 
 .section-sticky .overview-title-row {
     padding: calc(var(--p) * 1.5rem) 3rem calc(var(--p) * 1rem);
+}
+
+.overview-title-text {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
 }
 
 /* ═══════════════════════════════════════
@@ -84,27 +99,46 @@
 }
 
 /* ═══════════════════════════════════════
-   Hero image — fades out as --p increases
+   Hero media (image / video) — fills the column height
+   fades and collapses as --p increases
    ═══════════════════════════════════════ */
-.overview-hero-image {
+.overview-hero-media {
+    grid-area: media;
     width: 100%;
-    height: 20vh;
-    margin-top: 1rem;
-    border-radius: 8px;
+    height: 50vh;
+    max-height: 28vh;
+    border-radius: 10px;
     overflow: hidden;
+    background: transparent;
+    align-self: center;
+    justify-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section-sticky .overview-hero-image {
-    opacity: calc(1 - var(--p));
-    max-height: calc((1 - var(--p)) * 20vh);
-    margin-top: calc((1 - var(--p)) * 1rem);
-}
-
-.overview-hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.overview-hero-img,
+.overview-hero-video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     display: block;
+}
+
+/* Collapse as the section scrolls into compact state */
+.section-sticky .overview-hero-media {
+    opacity: calc(1 - var(--p));
+    max-height: calc((1 - var(--p)) * 50vh);
+    transition: opacity 0.35s ease;
+}
+
+.section-sticky .overview-title-row--has-media {
+    grid-template-columns:
+        minmax(0, calc(1.3fr + var(--p) * 1fr))
+        minmax(0, calc((1 - var(--p)) * 0.7fr));
+    gap: calc((1 - var(--p)) * 2.5rem);
 }
 
 /* ═══════════════════════════════════════
@@ -310,15 +344,48 @@
     }
 }
 
+@media (max-width: 768px) {
+    .overview-title-row--has-media {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'title'
+            'media';
+        min-height: 0;
+        gap: 1rem;
+    }
+
+    .overview-hero-media {
+        height: 26vh;
+    }
+
+    .section-sticky .overview-title-row--has-media {
+        grid-template-columns: 1fr;
+        gap: calc((1 - var(--p)) * 1rem);
+    }
+
+    .section-sticky .overview-hero-media {
+        max-height: calc((1 - var(--p)) * 26vh);
+    }
+}
+
 @media (max-width: 600px) {
     .overview-title-row {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        gap: 0.75rem;
     }
 
     .section-sticky .overview-title-row {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .overview-hero-media {
+        height: 22vh;
+    }
+
+    .section-sticky .overview-hero-media {
+        max-height: calc((1 - var(--p)) * 22vh);
     }
 
     .overview-meta-row {

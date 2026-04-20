@@ -30,6 +30,7 @@
                "thumbnail": "",
                "figure": "iil-career.SeaWaveChat"
             },
+            "thumbnail": "chatsea.png",
             "resume": {
                "shortName": "chatsea",
                "category": [
@@ -113,6 +114,7 @@
                "thumbnail": "",
                "figure": "iil-career.IdentityConstellation"
             },
+            "thumbnail": "MCP.jpeg",
             "resume": {
                "shortName": "MCP",
                "category": [
@@ -206,6 +208,7 @@
                "thumbnail": "",
                "figure": "iil-career.NetworkGraph"
             },
+            "thumbnail": "MMS.png",
             "resume": {
                "shortName": "MMS",
                "category": [
@@ -294,6 +297,7 @@
                "thumbnail": "",
                "figure": "iil-career.ScriptFlowEngine"
             },
+            "thumbnail": "Tasc.mp4",
             "resume": {
                "shortName": "Tasc",
                "category": [
@@ -381,6 +385,7 @@
                "thumbnail": "",
                "figure": "iil-career.ParallaxDepthLayers"
             },
+            "thumbnail": "AR for safety.mp4",
             "resume": {
                "shortName": "AR for safety",
                "category": [
@@ -458,6 +463,7 @@
                "thumbnail": "",
                "figure": "iil-career.FeatureTracker"
             },
+            "thumbnail": "MLVT.mp4",
             "resume": {
                "shortName": "MLVT",
                "category": [
@@ -531,6 +537,7 @@
                "thumbnail": "",
                "figure": "iil-career.StateMachineOrbit"
             },
+            "thumbnail": "iil.png",
             "resume": {
                "shortName": "iil",
                "category": [
